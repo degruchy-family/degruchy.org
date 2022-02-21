@@ -6,9 +6,25 @@
 	<link rel="stylesheet" href="/assets/stylesheets/simple.css">
 	<link rel="icon" href="/assets/images/2020-minimal-avatar-50.png" type="image/png">
 	<link rel="author" href="mailto:nathan@degruchy.org">
-	<link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+	<link rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
 	<title>Verily</title>
 	<style>
+		.sr-hide
+		{
+			background: #e77e23;
+			height:     30px;
+			left:       0;
+			padding:    8px;
+			position:   absolute;
+			transform:  translateY(-100%);
+			transition: transform 0.3s;
+		}
+
+		.sr-hide:focus
+		{
+			transform: translateY(0%);
+		}
+
 		header nav ol
 		{
 			align-content:   space-around;
@@ -29,6 +45,7 @@
 	</style>
 </head>
 <body>
+	<a href="#content" class="sr-hide">Skip to content</a>
 	<header>
 		<h1>Verily</h1>
 		<nav>
@@ -38,7 +55,7 @@
 			</ol>
 		</nav>
 	</header>
-	<main>
+	<main id="content">
 		<header>
 			<h1>I'm building something.</h1>
 		</header>
