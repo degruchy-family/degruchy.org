@@ -46,13 +46,13 @@ article
 	padding:      1em;
 }
 
-article header h2
+main header h2
 {
 	margin-bottom: 0.5em;
 	margin-top:    0;
 }
 
-article header h2 a
+main header h2 a
 {
 	font-size:       0.5em;
 	position:        relative;
@@ -63,8 +63,8 @@ article header h2 a
 	transition-duration: 250ms;
 }
 
-article:hover header h2 a,
-article:active header h2 a
+main:hover header h2 a,
+main:active header h2 a
 {
 	display: inline;
 	opacity: 1;
