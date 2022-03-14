@@ -228,13 +228,22 @@ nav ol
 {
 	list-style-type: none;
 	margin:0;
-	padding:0
+	padding:0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 nav ul li,
 nav ol li
 {
-	display: inline-block;
+	display: block;
+}
+
+nav ul li a,
+nav ol li a
+{
+	margin: 0 !important;
 }
 
 nav a,

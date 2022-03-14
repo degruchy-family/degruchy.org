@@ -70,6 +70,10 @@ article:active header h2 a
 	opacity: 1;
 }
 
+article header a.featured
+{
+	display: block;
+}
 
 article details summary
 {
