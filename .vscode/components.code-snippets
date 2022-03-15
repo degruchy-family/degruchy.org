@@ -12,7 +12,7 @@
 			"    <header>",
 			"        <h2 class=\"p-name entry-title\">",
 			"            ${2:title}",
-			"            <a href=\"#${1:date}-${1:date}\" class=\"u-url\">🔗</a>",
+			"            <a href=\"#${1:date}-${2:title}\" class=\"u-url\">🔗</a>",
 			"        </h2>",
 			"        <time class=\"dt-published published\" datetime=\"${3}T11:11-05:00\">11:11 on ${3}</time>",
 			"    </header>",
