@@ -8,13 +8,13 @@
 	"DeGruchy.org Article": {
 		"prefix": "doart",
 		"body": [
-			"<article class=\"hentry h-entry\">",
-			"  <header id=\"#${1:date}-${2:title}\">",
+			"<article class=\"hentry h-entry\" id=\"${1:date}-${2:title}\">",
+			"  <header>",
 			"    <h2 class=\"p-name entry-title\">",
 			"      ${2:title}",
 			"      <a href=\"#${1:date}-${1:date}\" class=\"u-url\">🔗</a>",
 			"    </h2>",
-			"    <time class=\"dt-published published\" datetime=\"${1:date}T11:11-05:00\">11:11 on ${1:date}</time>",
+			"    <time class=\"dt-published published\" datetime=\"${3}T11:11-05:00\">11:11 on ${3}</time>",
 			"  </header>",
 			"  <section class=\"article-content e-content\"></section>",
 			"  <footer>",
