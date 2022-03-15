@@ -1,0 +1,74 @@
+{
+	// Place your degruchy-org workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	"DeGruchy.org Article": {
+		"prefix": "doart",
+		"body": [
+			"<article class=\"hentry h-entry\">",
+			"  <header id=\"20220303-changeme\">",
+			"    <h2 class=\"p-name entry-title\">",
+			"      Changeme",
+			"      <a href=\"#20220303-changeme\" class=\"u-url\">🔗</a></h2>",
+			"    <time class=\"dt-published published\" datetime=\"2022-03-03T11:11-05:00\">11:11 on 2022-03-03</time>",
+			"  </header>",
+			"  <section class=\"article-content e-content\"></section>",
+			"  <footer>",
+			"    <address class=\"p-author author hcard h-card\"><img src=\"\" alt=\"\" class=\"u-photo\"><a href=\"\" class=\"u-url\"></a></address>",
+			"  </footer>",
+			"</article>"
+		],
+		"description": "DeGruchy.org Article"
+	},
+	"DeGruchy.org Gallery": {
+		"prefix": "dogallery",
+		"body": [
+			"<section class=\"gallery\">",
+			"  <ul>",
+			"    <li>",
+			"      <figure>",
+			"        <picture>",
+    		"          <source srcset=\"\" type=\"\">",
+    		"          <source srcset=\"\" type=\"\">",
+    		"          <img src=\"\" alt=\"\" loading=\"lazy\">",
+    		"        </picture>",
+    		"        <figcaption></figcaption>",
+			"      </figure>",
+			"    </li>",
+			"  </ul>",
+			"</section>"
+		],
+		"description": "DeGruchy.org Gallery"
+	},
+	"DeGruchy.org Picture": {
+		"prefix": "dopict",
+		"body": [
+			"<figure>",
+    		"  <picture>",
+    		"    <source>",
+    		"    <source>",
+    		"    <img src=\"\" alt=\"\" loading=\"lazy\">",
+    		"  </picture>",
+    		"  <figcaption></figcaption>",
+			"</figure>"
+		],
+		"description": "DeGruchy.org Picture"
+	},
+	"DeGruchy.org Video": {
+		"prefix": "dovid",
+		"body": [
+			"<figure>",
+    		"  <video src=\"\">",
+    		"    <source>",
+    		"    <source>",
+    		"    <source>",
+    		"  </video>",
+    		"  <figcaption></figcaption>",
+			"</figure>"
+		],
+		"description": "DeGruchy.org Video"
+	}
+}
