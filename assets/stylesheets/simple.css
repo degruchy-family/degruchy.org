@@ -234,6 +234,14 @@ nav ol
 	align-items: center;
 }
 
+@media only screen and (max-width: 750px) {
+	nav ul,
+	nav ol
+	{
+		flex-direction: column;
+	}
+}
+
 nav ul li,
 nav ol li
 {
