@@ -112,6 +112,23 @@ article .gallery picture
 	display: block
 }
 
+.video-embed
+{
+	position: relative;
+	width: 100%;
+	height: 0px;
+	padding-bottom: 56.25%;
+}
+
+.video-embed iframe
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
 .gallery img
 {
 	transition-delay:    100ms;
