@@ -129,6 +129,11 @@ article .gallery picture
 	top: 0;
 }
 
+iframe
+{
+	border: 1px solid black;
+}
+
 .gallery img
 {
 	transition-delay:    100ms;
