@@ -330,10 +330,10 @@
 				<p>It's happening!</p>
 				<section class="video">
 					<figure>
-						<video autoplay controls="" playsinline muted loop poster="/assets/images/posts/2022-03-12/key-and-peele-attendent-poster.jpg">
-							<source src="/assets/images/posts/2022-03-12/key-and-peele-attendent.mp4" type="video/mp4">
-							<source src="/assets/images/posts/2022-03-12/key-and-peele-attendent.webm" type="video/webm">
-							<source src="/assets/images/posts/2022-03-12/key-and-peele-attendent.ogv" type="video/ogv">
+						<video class="lazy" autoplay controls="" playsinline muted loop data-poster="/assets/images/posts/2022-03-12/key-and-peele-attendent-poster.jpg">
+							<source data-src="/assets/images/posts/2022-03-12/key-and-peele-attendent.mp4" type="video/mp4">
+							<source data-src="/assets/images/posts/2022-03-12/key-and-peele-attendent.webm" type="video/webm">
+							<source data-src="/assets/images/posts/2022-03-12/key-and-peele-attendent.ogv" type="video/ogv">
 						</video>
 						<figcaption>AHHHHHHHHHH!!</figcaption>
 					</figure>
@@ -705,10 +705,10 @@
 					</summary>
 					<section class="video">
 						<figure>
-							<video preload="none" controls poster="/assets/images/posts/2022-02-24/ukraine-car-crush_poster.jpg">
-								<source src="/assets/images/posts/2022-02-24/ukraine-car-crush.webm" type="video/webm">
-								<source src="/assets/images/posts/2022-02-24/ukraine-car-crush.mp4" type="video/mp4">
-								<source src="/assets/images/posts/2022-02-24/ukraine-car-crush.ogv" type="video/ogv">
+							<video preload="none" class="lazy" controls data-poster="/assets/images/posts/2022-02-24/ukraine-car-crush_poster.jpg">
+								<source data-src="/assets/images/posts/2022-02-24/ukraine-car-crush.webm" type="video/webm">
+								<source data-src="/assets/images/posts/2022-02-24/ukraine-car-crush.mp4" type="video/mp4">
+								<source data-src="/assets/images/posts/2022-02-24/ukraine-car-crush.ogv" type="video/ogv">
 							</video>
 							<figcaption>Video of the car crush incident. The man survived.</figcaption>
 						</figure>
@@ -730,9 +730,13 @@
 		<p>&copy; 2022 Nathan DeGruchy - All Rights Reserved</p>
 	</footer>
 	<script src="/assets/javascript/timeago.min.js"></script>
+	<script src="/assets/javascript/lazyload.min.js"></script>
 	<script>
 		// Time ago module
-		document.addEventListener("DOMContentLoaded", function () { timeago.render(document.querySelectorAll('time')); });
+		document.addEventListener("DOMContentLoaded", function () {
+			var lazyLoadInstance = new LazyLoad({});
+			timeago.render(document.querySelectorAll('time'));
+		});
 
 		// This allows touch screens to see hover events.
 		document.addEventListener("touchstart", function () { }, true);
