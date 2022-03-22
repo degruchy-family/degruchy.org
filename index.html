@@ -791,6 +791,7 @@
 	<script>
 		// Time ago module
 		document.addEventListener("DOMContentLoaded", function () {
+			// Start the lazyloader routine for images and video and iframes
 			var lazyLoadInstance = new LazyLoad({});
 			timeago.render(document.querySelectorAll('time'));
 		});
