@@ -33,14 +33,14 @@
 			"<section class=\"gallery\">",
 			"    <ul>",
 			"        <li>",
-			"            <a href=\"\">",
+			"            <a href=\"${1:imgpath}\">",
 			"                <figure>",
 			"                    <picture>",
-    		"                        <source srcset=\"\" type=\"\">",
-    		"                        <source srcset=\"\" type=\"\">",
-    		"                        <img src=\"\" alt=\"\" loading=\"lazy\">",
+    		"                        <source srcset=\"${1:imgpath}_thumb.avic\" type=\"image/avic\">",
+    		"                        <source srcset=\"${1:imgpath}_thumb.webp\" type=\"image/webp\">",
+    		"                        <img src=\"${1:imgpath}_thumb.jpg\" alt=\"\" loading=\"lazy\">",
     		"                    </picture>",
-    		"                    <figcaption></figcaption>",
+    		"                    <figcaption>$0</figcaption>",
 			"                </figure>",
 			"            </a>",
 			"        </li>",
@@ -48,6 +48,23 @@
 			"</section>"
 		],
 		"description": "DeGruchy.org Gallery"
+	},
+	"DeGruchy.org Gallery Image": {
+		"prefix": "dogi",
+		"body": [
+			"<li>",
+			"    <a href=\"${1:imgpath}\">",
+			"        <figure>",
+			"            <picture>",
+			"                <source srcset=\"${1:imgpath}_thumb.avic\" type=\"image/avic\">",
+			"                <source srcset=\"${1:imgpath}_thumb.webp\" type=\"image/webp\">",
+			"                <img src=\"${1:imgpath}_thumb.jpg\" alt=\"\" loading=\"lazy\">",
+			"            </picture>",
+			"            <figcaption>$0</figcaption>",
+			"        </figure>",
+			"    </a>",
+			"</li>",
+		]
 	},
 	"DeGruchy.org Picture": {
 		"prefix": "dopict",
