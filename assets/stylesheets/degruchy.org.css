@@ -166,6 +166,6 @@ iframe
 	article .gallery ul
 	{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(1fr);
+		grid-template-rows: 1fr;
 	}
 }
