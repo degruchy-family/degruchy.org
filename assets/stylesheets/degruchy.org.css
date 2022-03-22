@@ -109,7 +109,8 @@ article .gallery ol
 article .gallery li a,
 article .gallery picture
 {
-	display: block
+	display: block;
+	min-width: 128px;
 }
 
 .gallery a img
@@ -159,11 +160,12 @@ iframe
 	display:        inline-block;
 }
 
-@media screen and (max-device-width: 480px)
+@media screen and (max-width: 750px)
 {
 	article .gallery ol,
 	article .gallery ul
 	{
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1fr);
 	}
 }
