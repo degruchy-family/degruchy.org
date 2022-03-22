@@ -161,6 +161,15 @@ iframe
 	}
 }
 
+@media screen and (hover: none)
+{
+	main header h2 a
+	{
+		opacity: 1 !important;
+		transition: none;
+	}
+}
+
 @media screen and (max-width: 750px)
 {
 	article .gallery ol,

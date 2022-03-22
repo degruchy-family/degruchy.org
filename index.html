@@ -44,6 +44,46 @@
 		<header>
 			<h1>I built this.</h1>
 		</header>
+		<article class="hentry h-entry" id="20220322-hovering">
+			<header>
+				<h2 class="p-name entry-title">
+					"&hellip;Hovering[sic], in Much the Same Way That Bricks Don't"
+					<a href="#20220322-hovering" class="u-url">🔗</a>
+				</h2>
+				<time class="dt-published published" datetime="2022-03-22T15:16-04:00">15:16 on 2022-03-22</time>
+			</header>
+			<section class="article-content e-content">
+				<p>It feels weird to say it, but hover events (mouse style) are
+				becoming old fashioned selectors on the web. That's not to say
+				that there aren't <em>plenty</em> of users using mouse and
+				keyboard on the web. It's just that there are probably <em>many
+				more</em> on their phones or tablets, browsing your site. These
+				users don't have any standard method of triggering these
+				events.</p>
+				<p>Just eariler today, I was working on some CSS on my site,
+				when I noticed that the hover events don't work well with touch
+				screens. I understand <em>why</em>, but the workarounds&hellip;
+				don't spark joy. <a
+				href="https://git.degruchy.link/ndegruchy/degruchy-org/src/commit/4a7f1d74882727e87574e08476941144636496d2/index.html#L800">One
+				I found</a>, a is just a sort of open-ended loaded the
+				<code>touchstart</code> event and things ✨ magically ✨
+				worked.</p>
+				<p>I'm pretty sure that we're not far off from a future where
+				hover events are a legacy thing that gets added to tick a box. I
+				hope I'm wrong, maybe screens will get a near-touch hover event.
+				Who knows...</p>
+				<p>For anyone looking to be pendantic, like me, you can wrap
+				your <code>:hover</code> psuedo-selectors in a <code>@media
+				screen and (hover: hover)</code> to gate the effects behind a
+				feature lookup.</p>
+			</section>
+			<footer>
+				<address class="p-author author hcard h-card">
+					<img src="/assets/images/2020-minimal-avatar-50.png" alt="Me!" class="u-photo" height="50" width="50" loading="lazy">
+					<a href="/" class="u-url">Nathan DeGruchy</a>
+				</address>
+			</footer>
+		</article>
 		<article class="hentry h-entry" id="20220322-nytpaywall">
 			<header>
 				<h2 class="p-name entry-title">
