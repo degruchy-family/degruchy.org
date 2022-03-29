@@ -89,7 +89,7 @@ article .gallery ol
 	padding:               0;
 	margin:                1em 0;
 	display:               grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
 	grid-column-gap:       1em;
 	grid-row-gap:          1em;
 }
@@ -167,15 +167,5 @@ iframe
 	{
 		opacity: 1 !important;
 		transition: none;
-	}
-}
-
-@media screen and (max-width: 750px)
-{
-	article .gallery ol,
-	article .gallery ul
-	{
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
 	}
 }
