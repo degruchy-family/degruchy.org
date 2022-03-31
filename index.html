@@ -44,6 +44,64 @@
 		<header>
 			<h1>I built this.</h1>
 		</header>
+		<article class="hentry h-entry" id="20220331-depends">
+			<header>
+				<h2 class="p-name entry-title">
+					How Many Dependents Do You Have?
+					<a href="#20220331-depends" class="u-url">🔗</a>
+				</h2>
+				<time class="dt-published published" datetime="2022-03-31T13:48-04:00">13:48 on 2022-03-31</time>
+			</header>
+			<section class="article-content e-content">
+				<p>Since I post in page chunks, I was idlying considering a
+				method of determining if I needed a JS library (like the ones I
+				automatically include). Not that it's massively important, but
+				something I was thinking of. Like one does.</p>
+				<p>So, my idea works sort of like this:</p>
+				<ol>
+					<li>Load nothing but the bare essentials</li>
+					<li>On page "load", check for elements that fit a criteria.
+					Namely, elements that likely indicate the need of a module
+					or other JavaScript dependency.</li>
+					<li>Make a new script element with the corresponding URL to
+					the code in it. Then trigger any sort of initialization
+					step(s)</li>
+				</ol>
+				<p>So, something sort of like this:</p>
+<pre><code>
+document.addEventListener("DOMContentLoaded", function() {
+	var footnotes = document.querySelectorAll(".fn");
+
+	if(footnotes.length > 0)
+	{
+		let options = {
+			root: footnotes,
+			rootMargin: '10px',
+			threshold: 0.5
+		}
+
+		let observer = new IntersectionObserver(function(){
+			// Do the fetch of the relevant code here
+		}, options);
+	}
+}
+</code></pre>
+			<p>That way, if you don't need it for something, it doesn't get
+			loaded. <del>You could probably marry this with an Intersection
+			observer to make it more performant</del> <ins>Changed example to
+			include</ins>. Well, it would at least make sense for
+			<em>me</em>, because everything is on one page.</p>
+			<p>The more likely case is that there is already someone out there
+			who not only thought of <em>this</em>, but took it to another level
+			and I'm just waaaay behind the current tech.</p>
+			</section>
+			<footer>
+				<address class="p-author author hcard h-card">
+					<img src="/assets/images/2020-minimal-avatar-50.png" alt="Me!" class="u-photo" height="50" width="50" loading="lazy">
+					<a href="/" class="u-url">Nathan DeGruchy</a>
+				</address>
+			</footer>
+		</article>
 		<article class="hentry h-entry" id="20220328-orleck">
 			<header>
 				<h2 class="p-name entry-title">
