@@ -68,7 +68,7 @@
 					step(s)</li>
 				</ol>
 				<p>So, something sort of like this:</p>
-<pre><code>
+<pre><code class="language-javascript">
 document.addEventListener("DOMContentLoaded", function()
 {
 	var footnotes = document.querySelectorAll(".fn");
@@ -1325,12 +1325,32 @@ document.addEventListener("DOMContentLoaded", function()
 	<script>
 		function main()
 		{
-			var eTimes   = document.querySelectorAll('time');
-			var lazyLoad = new LazyLoad({
+			const eBody      = document.getElementById("content");
+			const eHead	     = document.getElementsByTagName("head")[0];
+			const eTimes     = document.querySelectorAll("time");
+			const codeblocks = document.querySelectorAll("pre code");
+			const lazyLoad   = new LazyLoad({
 				"threshold": 100
 			});
+
 			// Start time ago
 			timeago.render(eTimes);
+
+			if(codeblocks.length > 0)
+			{
+				// TODO: only load if visible. And only once.
+				const scriptElement = document.createElement("script");
+				const styleElement  = document.createElement("link");
+
+				styleElement.href = "/assets/stylesheets/prism.css";
+				styleElement.rel  = "stylesheet";
+
+				scriptElement.src = "/assets/javascript/prism.js";
+				scriptElement.async = true;
+
+				eHead.appendChild(styleElement);
+				eBody.appendChild(scriptElement);
+			}
 
 			return;
 		}
