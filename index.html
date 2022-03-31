@@ -68,36 +68,15 @@
 					step(s)</li>
 				</ol>
 				<p>So, something sort of like this:</p>
-<pre><code class="language-javascript">
-document.addEventListener("DOMContentLoaded", function()
-{
-	var footnotes = document.querySelectorAll(".fn");
-
-	if(footnotes.length > 0)
-	{
-		let options = {
-			root: footnotes,
-			rootMargin: '10px',
-			threshold: 0.5
-		}
-
-		let observer = new IntersectionObserver(function()
-		{
-			// Do the fetch of the relevant code here
-		}, options);
-
-		observer.observe(footnotes);
-	}
-}
-</code></pre>
-			<p>That way, if you don't need it for something, it doesn't get
-			loaded. <del>You could probably marry this with an Intersection
-			observer to make it more performant</del> <ins>Changed example to
-			include</ins>. Well, it would at least make sense for
-			<em>me</em>, because everything is on one page.</p>
-			<p>The more likely case is that there is already someone out there
-			who not only thought of <em>this</em>, but took it to another level
-			and I'm just waaaay behind the current tech.</p>
+				<p><em>(Some previously bad code here&hellip;)</em></p>
+				<p>That way, if you don't need it for something, it doesn't get
+				loaded. You could probably marry this with an Intersection
+				observer to make it more performant. Well, it would at least
+				make sense for <em>me</em>, because everything is on one
+				page.</p>
+				<p>The more likely case is that there is already someone out there
+				who not only thought of <em>this</em>, but took it to another level
+				and I'm just waaaay behind the current tech.</p>
 			</section>
 			<footer>
 				<address class="p-author author hcard h-card">
@@ -1328,29 +1307,12 @@ document.addEventListener("DOMContentLoaded", function()
 			const eBody      = document.getElementById("content");
 			const eHead	     = document.getElementsByTagName("head")[0];
 			const eTimes     = document.querySelectorAll("time");
-			const codeblocks = document.querySelectorAll("pre code");
 			const lazyLoad   = new LazyLoad({
 				"threshold": 100
 			});
 
 			// Start time ago
 			timeago.render(eTimes);
-
-			if(codeblocks.length > 0)
-			{
-				// TODO: only load if visible. And only once.
-				const scriptElement = document.createElement("script");
-				const styleElement  = document.createElement("link");
-
-				styleElement.href = "/assets/stylesheets/prism.css";
-				styleElement.rel  = "stylesheet";
-
-				scriptElement.src = "/assets/javascript/prism.js";
-				scriptElement.async = true;
-
-				eHead.appendChild(styleElement);
-				eBody.appendChild(scriptElement);
-			}
 
 			return;
 		}
