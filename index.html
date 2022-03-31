@@ -83,6 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		let observer = new IntersectionObserver(function(){
 			// Do the fetch of the relevant code here
 		}, options);
+
+		observer.observe(footnotes);
 	}
 }
 </code></pre>
