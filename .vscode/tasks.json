@@ -6,7 +6,7 @@
 		{
 			"label": "Upload files",
 			"type": "shell",
-			"command": "rclone sync . d-o:/mnt/HC_Volume_15221660/sites/degruchy.org/ --exclude \".git**\" --exclude \".vscode**\" --exclude .editorconfig --delete-excluded --progress --auto-confirm"
+			"command": "rclone sync . d-o:/mnt/HC_Volume_15221660/sites/degruchy.org/ --exclude \".git**\" --exclude \".vscode**\" --exclude \"*.code-workspace\" --exclude .editorconfig --delete-excluded --progress --auto-confirm"
 		}
 	]
 }
