@@ -89,7 +89,7 @@ article .gallery ol
 	padding:               0;
 	margin:                1em 0;
 	display:               grid;
-	grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(min(128px, 100%), 1fr));
 	grid-column-gap:       1em;
 	grid-row-gap:          1em;
 }
