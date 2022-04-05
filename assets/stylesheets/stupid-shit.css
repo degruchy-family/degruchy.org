@@ -22,3 +22,18 @@ details[open] summary.cw
 	margin: -0.6rem -1rem 0.75rem -1rem;
 	padding: 0.6rem 1rem 0.75rem 1rem;
 }
+
+#ideas ul
+{
+	list-style-type: none;
+	padding-left: 0
+}
+#ideas label,
+#ideas progress
+{
+	display: block
+}
+#ideas progress
+{
+	width: 100%;
+}
