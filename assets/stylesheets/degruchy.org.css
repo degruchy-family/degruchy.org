@@ -52,7 +52,7 @@ main header h2
 	margin-top:    0;
 }
 
-main header article:not(.reblog) h2 a
+main article:not(.reblog) header h2 a
 {
 	font-size:       0.5em;
 	position:        relative;
