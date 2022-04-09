@@ -52,7 +52,7 @@ main header h2
 	margin-top:    0;
 }
 
-main header h2 a
+main header article:not(.reblog) h2 a
 {
 	font-size:       0.5em;
 	position:        relative;
@@ -136,7 +136,7 @@ iframe
 
 @media screen and (hover: hover)
 {
-	main:hover header h2 a
+	main:hover article:not(.reblog) header h2 a
 	{
 		display: inline;
 		opacity: 1;
