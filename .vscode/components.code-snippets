@@ -43,7 +43,7 @@
 			"        <time class=\"dt-published published\" datetime=\"${4:dt-date}T${5:dt-time}-04:00\">${5:dt-time} on ${4:dt-date}</time>",
 			"    </header>",
 			"    <section class=\"article-content e-content\">$0</section>",
-			"    <p><a href=\"#${2:anchor}\">🔗 Permalink to linkpost</a>",
+			"    <p><a href=\"#${2:anchor}\">🔗 Permalink to this.</a>",
 			"    <footer>",
 			"        <address class=\"p-author author hcard h-card\">",
 			"            <img src=\"/assets/images/2020-minimal-avatar-50.png\" alt=\"Me!\" class=\"u-photo\" height=\"50\" width=\"50\" loading=\"lazy\">",
