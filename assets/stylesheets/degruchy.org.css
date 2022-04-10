@@ -128,6 +128,11 @@ iframe
 	border: 1px solid black;
 }
 
+.reblog section.article-content + p a
+{
+	text-decoration: none;
+}
+
 .p-author .u-photo
 {
 	vertical-align: middle;
