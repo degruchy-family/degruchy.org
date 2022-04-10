@@ -33,6 +33,7 @@
 			"<article class=\"hentry h-entry reblog\" id=\"${1:date}-${2:anchor}\">",
 			"    <header>",
 			"        <h2 class=\"p-name entry-title\">",
+			"            Link: ",
 			"            <a class=\"u-url\"",
 			"               rel=\"nofollow\"",
 			"               target=\"_blank\"",
