@@ -150,7 +150,7 @@ iframe
 	touch-action: manipulation;
 }
 .reblog section.article-content + p a:focus,
-.note section.article-content+p a
+.note section.article-content+p a:focus
 {
 	box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,
 				rgba(50, 50, 93, .2) 0 6px 15px 0,
