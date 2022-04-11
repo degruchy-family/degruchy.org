@@ -129,7 +129,8 @@ iframe
 	border: 1px solid black;
 }
 
-.reblog section.article-content + p a
+.reblog section.article-content + p a,
+.note section.article-content + p a
 {
 	font-size: 0.75em;
 	text-decoration: none;
@@ -148,7 +149,8 @@ iframe
 	user-select: none;
 	touch-action: manipulation;
 }
-.reblog section.article-content + p a:focus
+.reblog section.article-content + p a:focus,
+.note section.article-content+p a
 {
 	box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,
 				rgba(50, 50, 93, .2) 0 6px 15px 0,

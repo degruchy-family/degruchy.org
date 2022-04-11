@@ -22,3 +22,34 @@ details[open] summary.cw
 	margin: -0.6rem -1rem 0.75rem -1rem;
 	padding: 0.6rem 1rem 0.75rem 1rem;
 }
+
+.note blockquote
+{
+	position: relative;
+	width: 300px;
+	padding: 15px 25px 20px;
+	margin: 20px auto;
+	color: #fff;
+	border: 0;
+	border-radius: 6px;
+	background: #003252;
+}
+.note blockquote::after
+{
+	content: "";
+	position: absolute;
+	top: 100%;
+	right: 25px;
+	border-width: 30px 30px 0 0;
+	border-style: solid;
+	border-color: #003252 transparent;
+}
+.note blockquote a
+{
+	color: #fff
+}
+.note blockquote em
+{
+	font-style: normal;
+	text-decoration: underline;
+}

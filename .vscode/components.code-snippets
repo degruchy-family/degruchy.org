@@ -55,6 +55,25 @@
 		],
 		"description": "DeGruchy.org Article"
 	},
+	"DeGruchy.org Note": {
+		"prefix": "donote",
+		"body": [
+			"<article class=\"hentry h-entry note\" id=\"${1:date}-${2:anchor}\">",
+			"    <section class=\"article-content e-content\">",
+			"        <blockquote>",
+			"            <p>${0}</p>",
+			"            <cite class=\"p-author author hcard h-card\">",
+			"                <img src=\"/assets/images/2020-minimal-avatar-50.png\" alt=\"Me!\" class=\"u-photo\" height=\"50\" width=\"50\" loading=\"lazy\">",
+			"                <a href=\"/\" class=\"u-url\">Nathan DeGruchy</a>,",
+			"                <time datetime=\"${4:dt-date}T${5:dt-time}-04:00\" class=\"dt-published published\">${5:dt-time} on ${4:dt-date}</time>",
+			"            </cite>",
+			"        </blockquote>",
+			"    </section>",
+			"    <p><a href=\"${1:date}-${2:anchor}\" class=\"u-url\">🔗 Permalink to this post.</a></p>",
+			"</article>"
+		],
+		"description": "DeGruchy.org Note"
+	},
 	"DeGruchy.org Gallery": {
 		"prefix": "dogallery",
 		"body": [
