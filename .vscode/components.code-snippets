@@ -144,5 +144,22 @@
 			"</section>"
 		],
 		"description": "DeGruchy.org Video"
+	},
+	"DeGruchy.org ATOM Entry": {
+		"prefix": "doaten",
+		"body": [
+			"<entry>",
+			"\t<title>${1:title}</title>",
+			"\t<id>${2:url}</id>",
+			"\t<author>",
+			"\t\t<name>Nathan DeGruchy</name>",
+			"\t\t<email>nathan@degurchy.org</email>",
+			"\t</author>",
+			"\t<updated>${3:dt-date}T${4:dt-time}</updated>",
+			"\t<published>${3:dt-date}T${4:dt-time}</published>",
+			"\t<content src=\"${2:url}\"/>",
+			"</entry>",
+		],
+		"description": "DeGruchy.org ATOM Entry"
 	}
 }
