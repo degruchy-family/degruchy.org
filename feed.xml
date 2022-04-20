@@ -16,18 +16,18 @@
 	<id>https://degruchy.org/</id>
 
 	<entry>
-	  <title>Discomfort</title>
-	  <id>https://degruchy.org/#20220420-discomfort</id>
-	  <link rel="alternate" src="#20220420-discomfort"/>
-	  <author>
-		<name>Nathan DeGruchy</name>
-		<email>nathan@degruchy.org</email>
-	  </author>
-	  <updated>2022-04-20T15:33-04:00</updated>
-	  <published>2022-04-20T15:33-04:00</published>
-	  <content />
+		<title>Discomfort</title>
+		<id>https://degruchy.org/#20220420-discomfort</id>
+		<link rel="alternate" src="#20220420-discomfort"/>
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-04-20T15:33-04:00</updated>
+		<published>2022-04-20T15:33-04:00</published>
+		<content />
 	</entry>
-	
+
 	<entry>
 		<title>Simple Notes</title>
 		<id>https://degruchy.org/#20220411-simplenotes</id>
