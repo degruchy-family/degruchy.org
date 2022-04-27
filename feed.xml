@@ -15,6 +15,20 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 
+    <entry>
+        <title>COVID-19</title>
+        <id>https://degruchy.org/#20220425-COVID</id>
+        <link rel="alternate" href="https://degruchy.org/#20220425-COVID" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-04-25T22:41-04:00</updated>
+		<published>2022-04-25T22:41-04:00</published>
+		<content />
+
+    </entry>
+
 	<entry>
 	  <title>Meow, Meow, Meow!</title>
 	  <id>https://degruchy.org/#20220421-meowmeowmeow</id>
@@ -27,7 +41,7 @@
 	  <published>2022-04-21T11:26-04:00</published>
 	  <content />
 	</entry>
-	
+
 	<entry>
 		<title>Discomfort</title>
 		<id>https://degruchy.org/#20220420-discomfort</id>
