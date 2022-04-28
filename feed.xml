@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Verily at DeGruchy.org</title>
-	<link href="https://degruchy.org/"/>
+	<link href="https://degruchy.org/" />
 	<updated>2022-04-17T13:41:00-04:00</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
@@ -55,22 +55,22 @@
 	</entry>
 
 	<entry>
-	  <title>Meow, Meow, Meow!</title>
-	  <id>https://degruchy.org/#20220421-meowmeowmeow</id>
-	  <link rel="alternate" src="/index.html#20220421-meowmeowmeow"/>
-	  <author>
-		<name>Nathan DeGruchy</name>
-		<email>nathan@degruchy.org</email>
-	  </author>
-	  <updated>2022-04-21T11:26-04:00</updated>
-	  <published>2022-04-21T11:26-04:00</published>
-	  <content />
+		<title>Meow, Meow, Meow!</title>
+		<id>https://degruchy.org/#20220421-meowmeowmeow</id>
+		<link rel="alternate" src="/index.html#20220421-meowmeowmeow" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-04-21T11:26-04:00</updated>
+		<published>2022-04-21T11:26-04:00</published>
+		<content />
 	</entry>
 
 	<entry>
 		<title>Discomfort</title>
 		<id>https://degruchy.org/#20220420-discomfort</id>
-		<link rel="alternate" src="#20220420-discomfort"/>
+		<link rel="alternate" src="#20220420-discomfort" />
 		<author>
 			<name>Nathan DeGruchy</name>
 			<email>nathan@degruchy.org</email>
@@ -103,7 +103,7 @@
 		</author>
 		<updated>2022-04-10T11:53-04:00</updated>
 		<published>2022-04-10T11:53-04:00</published>
-		<content src="#20220410-idiotaral"/>
+		<content src="#20220410-idiotaral" />
 	</entry>
 
 	<entry>
@@ -115,6 +115,6 @@
 		</author>
 		<updated>2022-04-09T09:08-04:00</updated>
 		<published>2022-04-09T09:08-04:00</published>
-		<content src="#20220409-mytimetofly"/>
+		<content src="#20220409-mytimetofly" />
 	</entry>
 </feed>
