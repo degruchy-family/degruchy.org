@@ -103,7 +103,7 @@
 		</author>
 		<updated>2022-04-11T14:15-04:00</updated>
 		<published>2022-04-11T14:15-04:00</published>
-		<content></content>
+		<content />
 	</entry>
 
 	<entry>
@@ -116,7 +116,7 @@
 		</author>
 		<updated>2022-04-10T11:53-04:00</updated>
 		<published>2022-04-10T11:53-04:00</published>
-		<content src="#20220410-idiotaral" />
+		<content />
 	</entry>
 
 	<entry>
@@ -128,6 +128,6 @@
 		</author>
 		<updated>2022-04-09T09:08-04:00</updated>
 		<published>2022-04-09T09:08-04:00</published>
-		<content src="#20220409-mytimetofly" />
+		<content />
 	</entry>
 </feed>
