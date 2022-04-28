@@ -158,7 +158,7 @@
 			"\t</author>",
 			"\t<updated>${3:dt-date}T${4:dt-time}</updated>",
 			"\t<published>${3:dt-date}T${4:dt-time}</published>",
-			"\t<content src=\"${2:url}\"/>",
+			"\t<content />",
 			"</entry>",
 		],
 		"description": "DeGruchy.org ATOM Entry"
