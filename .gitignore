@@ -5,4 +5,5 @@
 .idea_modules/
 *.min.*
 !lazyload.min.js
+!timeago.min.js
 *.code-workspace
