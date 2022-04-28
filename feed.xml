@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 
+	<entry>
+		<title>Lots of Nothing</title>
+		<id>https://degruchy.org/#20220428-lotsofnothing</id>
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-04-28T14:38</updated>
+		<published>2022-04-28T14:38</published>
+		<content src="https://degruchy.org/#20220428-lotsofnothing" />
+	</entry>
+
     <entry>
         <title>Can't Sleep</title>
         <id>https://degruchy.org/#20220428-cantsleep</id>
