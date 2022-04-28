@@ -7,7 +7,7 @@
 			"label": "Upload files",
 			"type": "shell",
 			"windows": {
-				"command": "D:\\tools\\rsync\\rclone.exe sync . d-o:/mnt/HC_Volume_15221660/sites/degruchy.org/ --exclude \".git**\" --exclude \".vscode**\" --exclude \"*.code-workspace\" --exclude .editorconfig --delete-excluded --progress --auto-confirm"
+				"command": "D:\\tools\\rsync\\rclone.exe sync . d-o:/mnt/HC_Volume_15221660/sites/degruchy.org/ --exclude \".git**\" --exclude \".vscode**\" --exclude \"*.code-workspace\" --exclude .editorconfig --exclude Makefile --delete-excluded --progress --auto-confirm"
 			},
 			"linux": {
 				"command": "rclone sync . d-o:/mnt/HC_Volume_15221660/sites/degruchy.org/ --exclude \".git**\" --exclude \".vscode**\" --exclude \"*.code-workspace\" --exclude .editorconfig --exclude Makefile --delete-excluded --progress --auto-confirm"
