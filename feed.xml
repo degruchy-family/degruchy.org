@@ -16,6 +16,19 @@
 	<id>https://degruchy.org/</id>
 
 	<entry>
+		<title>Working From Home While Sick is Sometimes Nice</title>
+		<id>https://degruchy.org/#20220428-workingfromhome</id>
+		<link rel="alternative" href="https://degruchy.org/#20220428-workingfromhome" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-04-28T16:53</updated>
+		<published>2022-04-28T16:53</published>
+		<content src="https://degruchy.org/#20220428-workingfromhome"/>
+	</entry>
+
+	<entry>
 		<title>Lots of Nothing</title>
 		<id>https://degruchy.org/#20220428-lotsofnothing</id>
 		<link rel="alternative" href="https://degruchy.org/#20220428-lotsofnothing" />
