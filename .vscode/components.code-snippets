@@ -151,7 +151,7 @@
 			"<entry>",
 			"\t<title>${1:title}</title>",
 			"\t<id>${2:url}</id>",
-			"\t<link rel=\"alternative\" href=\"${2:url}\" />",
+			"\t<link rel=\"alternate\" href=\"${2:url}\" />",
 			"\t<author>",
 			"\t\t<name>Nathan DeGruchy</name>",
 			"\t\t<email>nathan@degurchy.org</email>",
