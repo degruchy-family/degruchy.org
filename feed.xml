@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-05-03T15:25:46-04:00</updated>
+	<updated>2022-05-05T15:43:53-04:00</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,19 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.png</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+
+	<entry>
+		<title>Print &amp; Play for Travel</title>
+		<id>https://degruchy.org/#20220505-pnptrip</id>
+		<link rel="alternate" href="https://degruchy.org/#20220505-pnptrip" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-05-05T14:34</updated>
+		<published>2022-05-05T14:34</published>
+		<content />
+	</entry>
 
 	<entry>
 		<title>VSCode vs. Emacs</title>
