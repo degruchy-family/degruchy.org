@@ -107,14 +107,6 @@ article .gallery picture
 	border: 3px solid white;
 }
 
-.video-embed
-{
-	position: relative;
-	width: 100%;
-	height: 0px;
-	padding-bottom: 56.25%;
-}
-
 iframe
 {
 	border: 1px solid black;
