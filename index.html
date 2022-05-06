@@ -46,6 +46,46 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220506-layers">
+				<header>
+					<h2 class="p-name entry-title">
+						"Ogres Have Layers; CSS Has <em>Layers</em>"
+						<a href="#20220506-layers" class="u-url">🔗</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-05-06T16:52-04:00">16:52 on 2022-05-06</time>
+				</header>
+				<section class="article-content e-content">
+					<p>While pounding out some HTML and other crap content for
+					this site, I stumbled upon some new features coming to CSS.
+					Specifically: Layers.</p>
+					<p>A CSS <code>layer</code> is like an extra precidence
+					trick to allow you to apply sets of CSS with increasing or
+					decreasing orders of specificity. The upshot is that you can
+					now include your CSS resets, base typography, colors,
+					utilities and <em>then</em> your customizations. As the
+					browser works its way down the list, older/earlier rules get
+					overwritten with newer ones until the layering has
+					ended.</p>
+					<p>This has a lot of potential with CSS frameworks, but it
+					also has helpful organizational use for people like me.
+					Allowing me to have a basic style ruleset, then layer
+					customizations on top of it, without having to break out the
+					<code>!important</code>'s to override tricky selectors. That
+					way, code-wise, everything stays pristine. The browser is
+					the mixologist.</p>
+					<p>Too bad it's <em>too new</em> to use. If you're <a
+					href="https://caniuse.com/css-cascade-layers">using less
+					than version ~100 of your respective browser</a>, you'd be
+					out of luck and (likely) get wacky results. Hopefully things
+					get sorted out soon.</p>
+				</section>
+				<footer>
+					<address class="p-author author hcard h-card">
+						<img src="/assets/images/2020-minimal-avatar-50.png" alt="Me!" class="u-photo" height="50" width="50" loading="lazy">
+						<a href="/" class="u-url">Nathan DeGruchy</a>
+					</address>
+				</footer>
+			</article>
 			<article class="hentry h-entry" id="20220505-pnptrip">
 				<header>
 					<h2 class="p-name entry-title">
