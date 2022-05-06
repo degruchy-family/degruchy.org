@@ -162,5 +162,17 @@
 			"</entry>",
 		],
 		"description": "DeGruchy.org ATOM Entry"
+	},
+	"DeGruchy.org Wishlist Entry": {
+		"prefix": "dowish",
+		"body": [
+			"<tr>",
+			"\t<td>${1:image}</td>",
+			"\t<td>${2:name}</td>",
+			"\t<td>${3:price}</td>",
+			"\t<td>${4:url}</td>",
+			"</tr>"
+		],
+		"description": "DeGruchy.org Wishlist Entry"
 	}
 }
