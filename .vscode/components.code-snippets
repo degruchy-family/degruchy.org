@@ -174,5 +174,17 @@
 			"</tr>"
 		],
 		"description": "DeGruchy.org Wishlist Entry"
+	},
+	"DeGruchy.org Embeded Video": {
+		"prefix": "doemb",
+		"body": [
+			"<section class=\"video-embed\">",
+			"\t<figure>",
+			"\t\t${1:embed}",
+			"\t\t<figcapton>${2:caption}</figcaption>",
+			"\t</figure>",
+			"</section>"
+		],
+		"description": "DeGruchy.org Video Embed"
 	}
 }
