@@ -117,6 +117,46 @@
 								</a>
 							</td>
 						</tr>
+						<tr>
+							<td>
+								<section class="picture">
+									<figure>
+										<picture>
+											<source srcset="/assets/images/wishlist/darbys_tn.avic" type="image/.avic">
+											<source srcset="/assets/images/wishlist/darbys_tn.webp" type="image/webp">
+											<img src="/assets/images/wishlist/darbys_tn.jpg" alt="A picture of a Darby's Dungeon Gift Card" loading="lazy">
+										</picture>
+									</figure>
+								</section>
+							</td>
+							<td>Darby's Dungeon Gift Card</td>
+							<td>Any</td>
+							<td>
+								<a href="https://darbysdungeon.com">
+									Darby's Dungeon
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<section class="picture">
+									<figure>
+										<picture>
+											<source srcset="/assets/images/wishlist/devdrag.webp" type="image/webp">
+											<source srcset="/assets/images/wishlist/devdrag.avic" type="image/avic">
+											<img src="/assets/images/wishlist/devdrag.jpg" alt="A picture of the Devoted Dragon Membership" loading="lazy">
+										</picture>
+									</figure>
+								</section>
+							</td>
+							<td>Darby's Dungeon Devoted Dragon Membership</td>
+							<td>250.00</td>
+							<td>
+								<a href="https://darbysdungeon.com">
+									Darby's Dungeon
+								</a>
+							</td>
+						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
@@ -140,7 +180,14 @@
 				});
 
 				// Start time ago
-				timeago.render(eTimes);
+				if(eTimes.length > 0)
+				{
+					timeago.render(eTimes);
+				}
+				else
+				{
+					console.log("No time blocks found.")
+				}
 
 				return;
 			}

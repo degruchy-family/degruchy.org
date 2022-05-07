@@ -1886,7 +1886,14 @@
 				});
 
 				// Start time ago
-				timeago.render(eTimes);
+				if(eTimes.length > 0)
+				{
+					timeago.render(eTimes);
+				}
+				else
+				{
+					console.log("No time blocks found.")
+				}
 
 				return;
 			}
