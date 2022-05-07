@@ -52,6 +52,15 @@ main header h2
 	margin-top:    0;
 }
 
+main article,
+main section
+{
+	/* Reset some... objectionable changes to simple.css */
+	border: none;
+	padding: inherit;
+	border-radius: inherit;
+}
+
 main article:not(.reblog) header h2 a
 {
 	font-size:       0.5em;
