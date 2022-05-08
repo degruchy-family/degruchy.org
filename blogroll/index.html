@@ -100,28 +100,7 @@
 		</footer>
 		<script src="/assets/javascript/timeago.min.js"></script>
 		<script src="/assets/javascript/lazyload.min.js"></script>
-		<script>
-			function main() {
-				const eTimes = document.querySelectorAll("time");
-				const lazyLoad = new LazyLoad({
-					"threshold": 100
-				});
-
-				// Start time ago
-				if (eTimes.length > 0)
-				{
-					timeago.render(eTimes);
-				}
-				else
-				{
-					console.log("No time blocks found.")
-				}
-
-				return;
-			}
-
-			document.addEventListener("DOMContentLoaded", main());
-		</script>
+		<script src="/assets/javascript/degruchy.org.js"></script>
 	</body>
 
 </html>
