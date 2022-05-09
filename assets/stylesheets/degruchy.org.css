@@ -27,6 +27,11 @@ header nav ol
 	margin: 0 auto;
 	width:  50vw;
 }
+header nav ol li,
+header nav ul li
+{
+	min-inline-size: max-content;
+}
 
 #content h1
 {
