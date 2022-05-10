@@ -61,7 +61,6 @@ main section
 {
 	/* Reset some... objectionable changes to simple.css */
 	border: none;
-	padding: inherit;
 	border-radius: inherit;
 }
 
