@@ -171,7 +171,7 @@
 			"\t<td>${2:name}</td>",
 			"\t<td>${3:price}</td>",
 			"\t<td>",
-			"\t\t<a href=\"${4:{url}\" rel=\"nofollow\">",
+			"\t\t<a href=\"${4:url}\" rel=\"nofollow\">",
 			"\t\t\t${5:store}",
 			"\t\t</a>",
 			"\t</td>",
