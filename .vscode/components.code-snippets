@@ -121,9 +121,9 @@
     		"\t\t<picture>",
     		"\t\t\t<source srcset=\"${1:path}.avic\" type=\"image/avic\">",
     		"\t\t\t<source srcset=\"${1:path}.webp\" type=\"image/webp\">",
-    		"\t\t\t<img src=\"${1:path}.jpg\" alt=\"{$2:caption}\" loading=\"lazy\">",
+    		"\t\t\t<img src=\"${1:path}.jpg\" alt=\"${2:caption}\" loading=\"lazy\">",
     		"\t\t</picture>",
-    		"\t\t<figcaption>{$2:caption}</figcaption>",
+    		"\t\t<figcaption>${2:caption}</figcaption>",
 			"\t</figure>",
 			"</section>"
 		],
