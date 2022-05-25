@@ -837,7 +837,7 @@
 			rgba(50, 151, 211, .3) 0 0 0 4px;
 	}
 
-	article footer address .picture
+	article .h-card .picture
 	{
 		display: inline-block;
 	}
