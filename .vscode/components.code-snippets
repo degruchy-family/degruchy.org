@@ -119,11 +119,11 @@
 			"<section class=\"picture\">",
 			"\t<figure>",
     		"\t\t<picture>",
-    		"\t\t\t<source srcset=\"\" type=\"\">",
-    		"\t\t\t<source srcset=\"\" type=\"\">",
-    		"\t\t\t<img src=\"\" alt=\"\" loading=\"lazy\">",
+    		"\t\t\t<source srcset=\"${1:path}.avic\" type=\"image/avic\">",
+    		"\t\t\t<source srcset=\"${1:path}.webp\" type=\"image/webp\">",
+    		"\t\t\t<img src=\"${1:path}.jpg\" alt=\"{$2:caption}\" loading=\"lazy\">",
     		"\t\t</picture>",
-    		"\t\t<figcaption></figcaption>",
+    		"\t\t<figcaption>{$2:caption}</figcaption>",
 			"\t</figure>",
 			"</section>"
 		],
@@ -170,7 +170,11 @@
 			"\t<td>${1:image}</td>",
 			"\t<td>${2:name}</td>",
 			"\t<td>${3:price}</td>",
-			"\t<td>${4:url}</td>",
+			"\t<td>",
+			"\t\t<a href=\"${4:{url}\" rel=\"nofollow\">",
+			"\t\t\t${5:store}",
+			"\t\t</a>",
+			"\t</td>",
 			"</tr>"
 		],
 		"description": "DeGruchy.org Wishlist Entry"
