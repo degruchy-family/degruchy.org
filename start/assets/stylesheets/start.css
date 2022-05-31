@@ -5,6 +5,24 @@
 	line-height: 1.5rem;
 }
 
+.sr-hide
+{
+	background: var(--code);
+	color: var(--bg);
+	height: 30px;
+	left: 0;
+	padding: 8px;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: transform 0.3s;
+}
+
+.sr-hide:focus
+{
+	transform: translateY(0%);
+}
+
+
 body
 {
 	padding: 5vh 15vw;
