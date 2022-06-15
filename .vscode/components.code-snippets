@@ -35,53 +35,6 @@
 		],
 		"description": "DeGruchy.org Article"
 	},
-	"DeGruchy.org Reblog": {
-		"prefix": "dorbl",
-		"body": [
-			"<article class=\"hentry h-entry reblog\" id=\"${1:date}-${2:anchor}\">",
-			"\t<header>",
-			"\t\t<h2 class=\"p-name entry-title\">",
-			"\t\t\tLink: ",
-			"\t\t\t<a class=\"u-url\"",
-			"\t\t\t\trel=\"nofollow\"",
-			"\t\t\t\ttarget=\"_blank\"",
-			"\t\t\t\thref=\"${3:siteurl}\">",
-			"\t\t\t\t ${4:title}",
-			"\t\t\t</a>",
-			"\t\t</h2>",
-			"\t\t<time class=\"dt-published published\" datetime=\"${5:dt-date}T${6:dt-time}-04:00\">${6:dt-time} on ${5:dt-date}</time>",
-			"\t</header>",
-			"\t<section class=\"article-content e-content\">$0</section>",
-			"\t<p><a href=\"#${1:date}-${2:anchor}\">🔗 Permalink to this post.</a>",
-			"\t<footer>",
-			"\t\t<address class=\"p-author author hcard h-card\">",
-			"\t\t\t<img src=\"/assets/images/2020-minimal-avatar-50.png\" alt=\"Me!\" class=\"u-photo\" height=\"50\" width=\"50\" loading=\"lazy\">",
-			"\t\t\t<a href=\"/\" class=\"u-url\">Nathan DeGruchy</a>",
-			"\t\t</address>",
-			"\t</footer>",
-			"</article>"
-		],
-		"description": "DeGruchy.org Article"
-	},
-	"DeGruchy.org Note": {
-		"prefix": "donote",
-		"body": [
-			"<article class=\"hentry h-entry note\" id=\"${1:date}-${2:anchor}\">",
-			"\t<section class=\"article-content e-content\">",
-			"\t\t<blockquote>",
-			"\t\t\t<p>${0}</p>",
-			"\t\t\t<cite class=\"p-author author hcard h-card\">",
-			"\t\t\t\t<img src=\"/assets/images/2020-minimal-avatar-50.png\" alt=\"Me!\" class=\"u-photo\" height=\"50\" width=\"50\" loading=\"lazy\">",
-			"\t\t\t\t<a href=\"/\" class=\"u-url\">Nathan DeGruchy</a>,",
-			"\t\t\t\t<time datetime=\"${4:dt-date}T${5:dt-time}-04:00\" class=\"dt-published published\">${5:dt-time} on ${4:dt-date}</time>",
-			"\t\t\t</cite>",
-			"\t\t</blockquote>",
-			"\t</section>",
-			"\t<p><a href=\"${1:date}-${2:anchor}\" class=\"u-url\">🔗 Permalink to this post.</a></p>",
-			"</article>"
-		],
-		"description": "DeGruchy.org Note"
-	},
 	"DeGruchy.org Gallery": {
 		"prefix": "dogallery",
 		"body": [
@@ -137,22 +90,6 @@
 		],
 		"description": "DeGruchy.org Picture"
 	},
-	"DeGruchy.org Video": {
-		"prefix": "dovid",
-		"body": [
-			"<section class\"video\">",
-			"\t<figure>",
-    		"\t\t<video src=\"\">",
-    		"\t\t\t<source src=\"\" type=\"\">",
-    		"\t\t\t<source src=\"\" type=\"\">",
-    		"\t\t\t<source src=\"\" type=\"\">",
-    		"\t\t</video>",
-    		"\t\t<figcaption></figcaption>",
-			"\t</figure>",
-			"</section>"
-		],
-		"description": "DeGruchy.org Video"
-	},
 	"DeGruchy.org ATOM Entry": {
 		"prefix": "doaten",
 		"body": [
@@ -188,10 +125,15 @@
 		"description": "DeGruchy.org Wishlist Entry"
 	},
 	"DeGruchy.org Embeded Video": {
-		"prefix": "doemb",
+		"prefix": "dovemb",
 		"body": [
 			"<section class=\"video-embed\">",
 			"\t<figure>",
+			"\t\t<video src=\"\">",
+			"\t\t\t<source src=\"\" type=\"\">",
+			"\t\t\t<source src=\"\" type=\"\">",
+			"\t\t\t<source src=\"\" type=\"\">",
+			"\t\t</video>",
 			"\t\t${1:embed}",
 			"\t\t<figcapton>${2:caption}</figcaption>",
 			"\t</figure>",
