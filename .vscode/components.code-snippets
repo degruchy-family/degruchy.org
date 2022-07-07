@@ -7,14 +7,15 @@
 	// Placeholders with the same ids are connected.
 	"DeGruchy.org Article": {
 		"prefix": "doart",
+		"scope": "html",
 		"body": [
-			"<article class=\"hentry h-entry\" id=\"${1:date}-${2:anchor}\">",
+			"<article class=\"hentry h-entry\" id=\"$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE-${2:anchor}\">",
 			"\t<header>",
 			"\t\t<h2 class=\"p-name entry-title\">",
 			"\t\t\t${3:title}",
-			"\t\t\t<a href=\"#${1:date}-${2:anchor}\" class=\"u-url\">🔗</a>",
+			"\t\t\t<a href=\"#$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE-${2:anchor}\" class=\"u-url\">🔗</a>",
 			"\t\t</h2>",
-			"\t\t<time class=\"dt-published published\" datetime=\"${4:dt-date}T${5:dt-time}-04:00\">${5:dt-time} on ${4:dt-date}</time>",
+			"\t\t<time class=\"dt-published published\" datetime=\"$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND-04:00\">$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE on $CURRENT_HOUR:$CURRENT_MINUTE</time>",
 			"\t</header>",
 			"\t<section class=\"article-content e-content\">$0</section>",
 			"\t<footer>",
@@ -37,6 +38,7 @@
 	},
 	"DeGruchy.org Gallery": {
 		"prefix": "dogallery",
+		"scope": "html",
 		"body": [
 			"<section class=\"gallery\">",
 			"\t<ul>",
@@ -59,6 +61,7 @@
 	},
 	"DeGruchy.org Gallery Image": {
 		"prefix": "dogi",
+		"scope": "html",
 		"body": [
 			"<li>",
 			"\t<a href=\"${1:imgpath}\">",
@@ -76,6 +79,7 @@
 	},
 	"DeGruchy.org Picture": {
 		"prefix": "dopict",
+		"scope": "html",
 		"body": [
 			"<section class=\"picture\">",
 			"\t<figure>",
@@ -92,6 +96,7 @@
 	},
 	"DeGruchy.org ATOM Entry": {
 		"prefix": "doaten",
+		"scope": "xml",
 		"body": [
 			"<entry>",
 			"\t<title>${1:title}</title>",
@@ -101,8 +106,8 @@
 			"\t\t<name>Nathan DeGruchy</name>",
 			"\t\t<email>nathan@degurchy.org</email>",
 			"\t</author>",
-			"\t<updated>${3:dt-date}T${4:dt-time}</updated>",
-			"\t<published>${3:dt-date}T${4:dt-time}</published>",
+			"\t<updated>$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND-04:00</updated>",
+			"\t<published>$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND-04:00</published>",
 			"\t<content />",
 			"</entry>",
 		],
@@ -110,6 +115,7 @@
 	},
 	"DeGruchy.org Wishlist Entry": {
 		"prefix": "dowish",
+		"scope": "html",
 		"body": [
 			"<tr>",
 			"\t<td>${1:image}</td>",
@@ -126,6 +132,7 @@
 	},
 	"DeGruchy.org Embeded Video": {
 		"prefix": "dovemb",
+		"scope": "html",
 		"body": [
 			"<section class=\"video-embed\">",
 			"\t<figure>",
