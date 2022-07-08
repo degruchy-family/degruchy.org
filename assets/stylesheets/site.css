@@ -45,6 +45,22 @@ header nav ul li a
 	margin: 0;
 }
 
+@media only screen and (max-width: 720px)
+{
+
+	header nav ol,
+	header nav ul
+	{
+		flex-direction: column;
+	}
+
+	header nav ol li,
+	header nav ul li
+	{
+		margin-top: 1em;
+	}
+}
+
 #content h1
 {
 	text-align: center;
