@@ -1,3 +1,6 @@
+/**
+ * Screen reader tools *
+ */
 .sr-hide
 {
 	background: var(--code);
@@ -9,12 +12,15 @@
 	transform: translateY(-100%);
 	transition: transform 0.3s;
 }
-
 .sr-hide:focus
 {
 	transform: translateY(0%);
 }
 
+
+/**
+ * Page heading *
+ */
 body>header h1 .picture
 {
 	border: 0;
@@ -24,6 +30,7 @@ body>header h1 .picture
 	width: 50px;
 }
 
+/** Page heading - navigation */
 header nav ol
 {
 	margin: 0 auto;
@@ -32,7 +39,6 @@ header nav ol
 	justify-items: center;
 	justify-content: space-evenly;
 }
-
 header nav ol li,
 header nav ul li
 {
@@ -47,7 +53,10 @@ header nav ul li a
 
 @media only screen and (max-width: 720px)
 {
-
+	/** Fixes
+	 * Mobile navigation should become columar to allow easier tapping, as well
+	 * as giving some space to do so.
+	 */
 	header nav ol,
 	header nav ul
 	{
@@ -61,6 +70,9 @@ header nav ul li a
 	}
 }
 
+/**
+ * Page Content
+ */
 #content h1
 {
 	text-align: center;
@@ -79,11 +91,13 @@ main header h2
 
 main section
 {
-	/* Reset some... objectionable changes to simple.css */
 	border: none;
 	border-radius: inherit;
 }
 
+/**
+ * Articles
+ */
 main article:not(.reblog) header h2 a
 {
 	font-size: 0.5em;
@@ -200,7 +214,7 @@ article .h-card .picture
 	display: inline-block;
 }
 
-footer section
+article footer section
 {
 	margin: 0;
 }
