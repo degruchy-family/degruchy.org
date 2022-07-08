@@ -27,13 +27,22 @@ body>header h1 .picture
 header nav ol
 {
 	margin: 0 auto;
-	width: 50vw;
+	width: 33vw;
+	align-items: center;
+	justify-items: center;
+	justify-content: space-evenly;
 }
 
 header nav ol li,
 header nav ul li
 {
 	min-inline-size: max-content;
+	margin: 0;
+}
+header nav ol li a,
+header nav ul li a
+{
+	margin: 0;
 }
 
 #content h1
@@ -78,7 +87,7 @@ article
 	padding: 1em;
 }
 
-article section,
+article section
 {
 	padding: 0;
 }
@@ -175,7 +184,7 @@ article .h-card .picture
 	display: inline-block;
 }
 
-article footer section
+footer section
 {
 	margin: 0;
 }
