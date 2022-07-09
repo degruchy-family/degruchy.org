@@ -16,6 +16,19 @@
 	<id>https://degruchy.org/</id>
 
 	<entry>
+		<title>Longevity of the Simple</title>
+		<id>https://degruchy.org/#20220709-longevity-of-the-simple</id>
+		<link rel="alternate" href="https://degruchy.org/#20220709-longevity-of-the-simple" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-07-09T11:54:22</updated>
+		<published>2022-07-09T11:54:22</published>
+		<content />
+	</entry>
+
+	<entry>
 		<title>The End</title>
 		<id>https://degruchy.org/#20220707-theend</id>
 		<link rel="alternate" href="https://degruchy.org/#20220707-theend" />
