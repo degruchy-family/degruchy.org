@@ -31,15 +31,6 @@ body>header h1 .picture
 }
 
 /** Page heading - navigation */
-header nav ol,
-header nav ul
-{
-	margin: 0 auto;
-	width: max-content;
-	align-items: center;
-	justify-items: center;
-	justify-content: space-evenly;
-}
 header nav ol li,
 header nav ul li
 {
