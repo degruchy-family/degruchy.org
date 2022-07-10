@@ -46,8 +46,8 @@ header nav ul li a
 @media only screen and (max-width: 720px)
 {
 	/** Fixes
-	 * Mobile navigation should become columar to allow easier tapping, as well
-	 * as giving some space to do so.
+	 * Mobile navigation should become columar to allow easier
+	 * tapping, as well as giving some space to do so.
 	 */
 	header nav ol,
 	header nav ul
