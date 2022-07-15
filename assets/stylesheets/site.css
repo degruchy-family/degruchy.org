@@ -17,21 +17,6 @@
 	transform: translateY(0%);
 }
 
-
-/**
- * Page heading *
- */
-body > header > h1 picture
-{
-	display: inline-block;
-	vertical-align: middle;
-	width: 50px;
-}
-body > header > h1 section
-{
-	margin-right: 1rem;
-}
-
 /** Page heading - navigation */
 header nav ol li,
 header nav ul li
