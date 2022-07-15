@@ -17,36 +17,22 @@
 	transform: translateY(0%);
 }
 
-/** Page heading - navigation */
-header nav ol li,
-header nav ul li
+/**
+ * Header Nav
+ */
+body > header > nav ol,
+body > header > nav ul
 {
-	margin: 0;
-	min-inline-size: max-content;
-}
-header nav ol li a,
-header nav ul li a
-{
-	margin: 0;
+	align-contents: center;
+	justify-content: space-around;
+	margin: 0 auto 0 auto;
+	width: 40vw;
 }
 
-@media only screen and (max-width: 720px)
+body > header > nav a,
+body > header > nav a
 {
-	/** Fixes
-	 * Mobile navigation should become columar to allow easier
-	 * tapping, as well as giving some space to do so.
-	 */
-	header nav ol,
-	header nav ul
-	{
-		flex-direction: column;
-	}
-
-	header nav ol li,
-	header nav ul li
-	{
-		margin-top: 1em;
-	}
+	margin: 0;
 }
 
 /**
