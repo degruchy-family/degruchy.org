@@ -21,13 +21,15 @@
 /**
  * Page heading *
  */
-body>header h1 .picture
+body > header > h1 picture
 {
-	border: 0;
 	display: inline-block;
-	margin: 0 auto;
 	vertical-align: middle;
 	width: 50px;
+}
+body > header > h1 section
+{
+	margin-right: 1rem;
 }
 
 /** Page heading - navigation */
