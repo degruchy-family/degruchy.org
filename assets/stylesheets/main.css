@@ -1,6 +1,93 @@
-@layer framework, hacks, stupid-shit, site;
+:root
+{
+	background-color: #FFF;
+	color: #000;
+	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	margin: 0;
+	padding: 0;
+}
 
-@import "/assets/stylesheets/simple.min.css" layer(framework);
-@import "/assets/stylesheets/hacks.css" layer(hacks);
-@import "/assets/stylesheets/stupid-shit.css" layer(stupid-shit);
-@import "/assets/stylesheets/site.css" layer(site);
+/* Reset box-sizing */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/**
+ * Screen reader tools *
+ */
+.sr-hide
+{
+	left: 0;
+	line-height: 30px;
+	padding: 8px;
+	position: absolute;
+	top: -50px;
+}
+.sr-hide:focus { top: 0; }
+
+/**
+ * Initial page layout
+ * Clever trick that sets up the page as a three column grid,
+ * then forces everything to the center.
+ */
+body
+{
+  display: grid;
+  grid-template-columns: 1fr min(45rem, 90%) 1fr;
+  margin: 0;
+}
+body > * { grid-column: 2; }
+
+/**
+ * Page header
+ * I use a webp here, because honestly, it's so well supported now,
+ * and the transfer savings is high enough that if you don't support it
+ * I don't even know how you run on the web...
+ */
+body > header h1
+{
+	background-image: url('/assets/images/2020-minimal-avatar-50.webp');
+	background-position: 20vw center;
+	background-repeat: no-repeat;
+	line-height: 60px;
+	padding-left: 55px;
+	text-align: center;
+}
+
+/**
+ * Navigation
+ * We setup the navigation to be a flex box of list items.
+ * This allows us to easily swap to columar layout when on small
+ * screens.
+ */
+body > header nav ul,
+body > header nav ol
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+body > header nav ul li,
+body > header nav ol li
+{
+	display: inline-block;
+	list-style-type: none;
+}
+@media only screen and (max-width: 720px)
+{
+	/**
+	 * Mobile nav
+	 * This aligns the content to the center and uses the flex property
+	 * to flip the content into a columar layout.
+	 */
+	body > header nav ul,
+	body > header nav ol
+	{
+		flex-direction: column;
+	}
+	body > header nav ul li,
+	body > header nav ol li
+	{
+		text-align: center
+	}
+}
