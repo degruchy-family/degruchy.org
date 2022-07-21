@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-07-20T22:26:51-0400</updated>
+	<updated>2022-07-21T12:38:35-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,19 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.png</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+
+	<entry>
+		<title>300 is Not a Number I Like</title>
+		<id>https://degruchy.org/#20220721-300-is-not-a-number-i-like</id>
+		<link rel="alternate" href="https://degruchy.org/#20220721-300-is-not-a-number-i-like" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-07-21T12:37:49-0400</updated>
+		<published>2022-07-21T12:37:49-0400</published>
+		<content />
+	</entry>
 
 	<entry>
 		<title>Windows 11 and Rejecting the "New"</title>
