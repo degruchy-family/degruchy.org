@@ -1,3 +1,7 @@
+/**************************************/
+/* Nathan DeGruchy's Blog Style Sheet */
+/**************************************/
+
 :root
 {
 	background-color: #FFF;
@@ -47,10 +51,10 @@ body > * { grid-column: 2; }
 body > header h1
 {
 	background-image: url('/assets/images/2020-minimal-avatar-50.webp');
-	background-position: 20vw center;
+	background-position: top center;
 	background-repeat: no-repeat;
-	line-height: 60px;
-	padding-left: 55px;
+	line-height: 90px;
+	padding-top: 55px;
 	text-align: center;
 }
 
@@ -88,6 +92,101 @@ body > header nav ol li
 	body > header nav ul li,
 	body > header nav ol li
 	{
-		text-align: center
+		text-align: center;
+		margin-bottom: 1rem;
 	}
+}
+
+/**
+ * Articles
+ */
+article
+{
+	border-top: 1px solid #CCC;
+}
+
+article header { margin-bottom: 1rem }
+
+article header a.featured
+{
+	display: block;
+}
+
+/**
+ * Galleries
+ */
+.gallery ul,
+.gallery ol
+{
+	display: grid;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(min(128px, 100%), 1fr));
+	list-style-type: none;
+	margin: 1em 0;
+	padding: 0;
+	user-select: none;
+}
+.gallery li
+{
+	width: 128px;
+	text-align: center;
+}
+
+/**
+ * Fix some image and video scaling issues
+ */
+img,
+video
+{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figure
+{
+  margin: 0;
+  text-align: center;
+}
+
+figcaption
+{
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+blockquote
+{
+  margin: 2rem 0 2rem 2rem;
+  padding: 0.4rem 0.8rem;
+  font-style: italic;
+}
+
+cite
+{
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+iframe
+{
+	border: 1px solid black;
+	display: block;
+	width: 100%;
+}
+
+details summary
+{
+	transition-delay: 100ms;
+	transition-duration: 250ms;
+	transition-property: box-shadow;
+}
+
+details[open] summary
+{
+	box-shadow: none;
+	transition-delay: 0ms;
+	transition-duration: 0ms;
 }
