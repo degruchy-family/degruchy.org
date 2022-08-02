@@ -11,6 +11,12 @@
 	padding: 0;
 }
 
+code, pre
+{
+	font-family: "Ivoseka", monospace;
+	overflow-x: scroll;
+}
+
 /* Reset box-sizing */
 *,
 *::before,
@@ -107,6 +113,8 @@ article
 
 article header { margin-bottom: 1rem }
 
+article header h2 a { text-decoration: none }
+
 article header a.featured
 {
 	display: block;
@@ -148,6 +156,16 @@ figure
 {
   margin: 0;
   text-align: center;
+}
+
+figure code pre
+{
+	border-color: black;
+	border-style: solid;
+	border-width: 1px 0;
+	font-size: larger;
+	padding-top: 1rem;
+	text-align: left;
 }
 
 figcaption
