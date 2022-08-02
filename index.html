@@ -42,6 +42,81 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220802-make-my-day">
+				<header>
+					<h2 class="p-name entry-title">
+						Make My Day
+						<a href="#20220802-make-my-day" class="u-url">🔗</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-08-02T10:47:15-0400">10:47:15 on 2022-08-02</time>
+				</header>
+				<section class="article-content e-content">
+					<p>I had a small amount of friction in Emacs when
+					deploying this site. Often, I'd be in some file
+					deeper in the project than the root, then decide I
+					want to deploy after making changes. In VSCode,
+					the build steps worked fine, as it had explicit
+					instructions on how to do it. For Emacs, though, I
+					opted for a simple <code>Makefile</code>. This,
+					however, posed a bit of a problem: In Emacs, the
+					"working directory" is wherever that buffer's file
+					happens to be. Which means when you invoke
+					<code>M-x compile</code>, <code>make</code> would
+					fail, because there was no <code>Makefile</code>
+					in the directory that that buffer is visiting. As
+					a work-around, I would visit the root
+					<code>index.html</code> file and run compile from
+					there. Not great, but it worked.</p>
+					<p>I recently <a
+					href="https://nullprogram.com/blog/2017/08/22/">ran
+					across a blog post that fixed all this</a> for me
+						with the simplest inclusion.</p>
+					<p>
+						<figure>
+							<code>
+								<pre>
+(defun my-compile ()
+  (interactive)
+  (let ((default-directory (locate-dominating-file "." "Makefile")))
+    (compile "make")))
+								</pre>
+							</code>
+						</figure>
+                        <figcaption>From the blog post.</figcaption>
+					</p>
+					<p><em>Of course</em> Emacs has a tool to do this.
+					Apparently this <code>locate-dominating-file</code> is
+						oft-underused, but wow, what a difference!</p>
+                    <blockquote>
+                        <p>Starting at FILE, look up directory
+							hierarchy for directory containing NAME.
+							FILE can be a file or a directory. If it’s
+							a file, its directory will serve as the
+							starting point for searching the hierarchy
+							of directories. Stop at the first parent
+							directory containing a file NAME, and
+							return the directory.</p>
+                        <cite>Shockingly, not officially documented in the Emacs manual.</cite>
+                    </blockquote>
+					<p>I wonder what else lies, lurking below the
+					surface, waiting to be discovered and improve my
+					experience.</p>
+				</section>
+			</article>
+			<article class="hentry h-entry" id="20220729-stadia-down">
+				<header>
+					<h2 class="p-name entry-title">
+						Stadia Down
+						<a href="#20220729-stadia-down" class="u-url">🔗</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-07-29T13:17:53-0400">13:17:53 on 2022-07-29</time>
+				</header>
+				<section class="article-content e-content">
+					<p><a href="https://gamerant.com/rumor-google-stadia-shut-down/">Rumor: Google Stadia May be Getting Shut Down</a></p>
+					<p>😅😅😅</p>
+					<p>Hahaha!</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220726-picard">
 				<header>
 					<h2 class="p-name entry-title">
