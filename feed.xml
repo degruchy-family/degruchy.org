@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-08-02T11:03:03-0400</updated>
+	<updated>2022-08-04T14:35:14-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,19 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.png</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+
+	<entry>
+		<title>I'm Watching You</title>
+		<id>https://degruchy.org/#20220804-i-m-watching-you</id>
+		<link rel="alternate" href="https://degruchy.org/#20220804-i-m-watching-you" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-08-04T14:34:36-0400</updated>
+		<published>2022-08-04T14:34:36-0400</published>
+		<content />
+	</entry>
 
 	<entry>
 		<title>Make My Day</title>
