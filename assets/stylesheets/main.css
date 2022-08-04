@@ -106,19 +106,13 @@ body > header nav ol li
 /**
  * Articles
  */
-article
-{
-	border-top: 1px solid #CCC;
-}
+article { border-top: 1px solid #CCC; }
 
 article header { margin-bottom: 1rem }
 
 article header h2 a { text-decoration: none }
 
-article header a.featured
-{
-	display: block;
-}
+article header a.featured { display: block; }
 
 /**
  * Galleries
