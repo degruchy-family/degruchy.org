@@ -42,6 +42,116 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220804-skeletons-in-my-closet">
+				<header>
+					<h2 class="p-name entry-title">
+						Skeletons in My Closet
+						<a href="#20220804-skeletons-in-my-closet" class="u-url">🔗</a>
+						</h2>
+					<time class="dt-published published" datetime="2022-08-04T17:49:15-0400">17:49:15 on 2022-08-04</time>
+				</header>
+				<section class="article-content e-content">
+					<p>I've decided in my quest to simplify Emacs down
+					to the bare minimum acceptable configuration that
+					I can tollerate that I will use the
+					Emacs <code>Skeleton</code> package over the more
+					robust, but ultimately not-included in the
+					defaults, <code>yasnippet</code> package. I
+					like <code>yasnippet</code> just fine, really. If
+					I did more programming, I guess I would have more
+					use for it, since it makes creating and expanding
+					snippets almost magical. However, I am not a
+					programmer, and with <code>yasnippet</code>
+					included it feels like I've added yet more bloat
+					to a already &amp;hellip; healthy configuration
+					size. Besides, why go out and buy a super deluxe
+					hammer when the base model that came with your
+					toolbox is vastly more than you need already?</p>
+
+					<p>So, <code>Skeletons</code>, what are they? As
+					part of the autotype features of Emacs, they're
+					designed to alliveate typing frequently inserted
+					things.</p>
+
+					<blockquote>
+						<p>
+							The simplest kind of skeleton will simply
+							insert some text indented according to the
+							major mode and leave the cursor at a
+							likely place in the middle. Interactive
+							skeletons may prompt you for a string that
+							will be part of the inserted text.
+						</p>
+					</blockquote>
+
+					<p>Initially, it feels like skeletons are just
+					fancy function syntax. You <i>define</i> them in
+					much the same way you would a function: </p>
+
+<code>
+<pre>(define-skeleton name
+  "doc string"
+  "What is your name? "
+  "Hello, " str)</pre>
+</code>
+
+					<p>Part of my reasoning for this is that you can
+					do all sorts of werid stuff inside skeletons, like
+					set variables, process text and more. Sure, there
+					is extra syntax for doing other, <i>more
+					snippet-like</i> things, but it helped me
+					understand the concept when migrating
+					from <code>yasnippet</code>. The concept of how
+					things work in skeletons seems like it should be
+					documented <i>way</i> better than it is. I
+					actually had to look up what other people had done
+					just to get an idea for how I could implement some
+					of the things I needed. Once I got that under
+					control, I was on much more sure footing.</p>
+
+					<p>One of the werid thing is that the second line
+					of the skeleton is actually something you can use
+					to prompt the user. If you were to run that code
+					above, you would be prompted for your name. You
+					can substitute other expressions in here, or
+					even <code>nil</code>, if you don't need anything.
+					Sometimes you'll <i>want</i> to ignore the user
+					until you're good and ready, so they also provide
+					stuff like <code>(skeleton-read "Text: ")</code>
+					that allows you to further prompt the user. Using
+					that with <code>let</code> or <code>setq</code>
+					gives you lots of flexibility.</p>
+
+					<p>One thing I haven't yet figured out is how to
+					make it indent correctly. Maybe there is a setting
+					to just do what the mode indention rules
+					say&#x2026; I mean, it <i>is</i> Emacs, and I'm
+					sure this has come up before me. Though,
+					with <code>embrace-commander</code>
+					and <code>&lt;Tab&gt;</code>, it's a trivial task
+					to fix the alignment when done. This is especially
+					useful for me while editing my site's
+					HTML/XML.</p>
+
+					<p>Maybe I should come up with a guide to what I
+					know and learn about <code>skeleton</code> mode,
+					like how it integrates with <code>abbrev</code>
+					for easier insertion of snippets.</p>
+
+<code><pre>;; Example from M-x edit-abbrevs &lt;RET&gt;
+;; This runs the 'name' skeleton when you insert
+;; whitespace after typing "hello" in an org buffer
+(org-mode-abbrev-table)
+
+"hello" 0 "" name</pre></code>
+
+					<p>I'm going to head back into the manual. It's
+					not always an obvious read, but there is usually
+					something there that surprises me. Maybe,one day,
+					I'll master it.</p>
+
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220804-i-m-watching-you">
 				<header>
 					<h2 class="p-name entry-title">
