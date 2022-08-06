@@ -25,7 +25,7 @@ sup { font-size: small; }
 /**
  * Screen reader tools *
  */
-.sr-hide
+.hide-for-screen-readers
 {
 	left: 0;
 	line-height: 30px;
@@ -33,7 +33,7 @@ sup { font-size: small; }
 	position: absolute;
 	top: -50px;
 }
-.sr-hide:focus { top: 0; }
+.hide-for-screen-readers:focus { top: 0; }
 
 /**
  * Initial page layout
