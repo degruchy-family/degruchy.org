@@ -1,3 +1,9 @@
+/**
+ * DeGruchy.org JavaScript
+ * A bunch of initialization stuff and collecting elements to feed to
+ * things like timeago
+ */
+
 function main() {
 	const eTimes = document.querySelectorAll("time");
 	const lazyLoad = new LazyLoad({
@@ -11,7 +17,7 @@ function main() {
 	}
 	else
 	{
-		console.log("DeGruchy.org: No time blocks found.");
+		console.warn("DeGruchy.org: No time blocks found.");
 	}
 
 	return;
