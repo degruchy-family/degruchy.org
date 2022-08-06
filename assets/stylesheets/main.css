@@ -2,6 +2,9 @@
 /* Nathan DeGruchy's Blog Style Sheet */
 /**************************************/
 
+/****************************/
+/* Top Level Configurations */
+/****************************/
 :root
 {
 	background-color: #FFF;
@@ -11,6 +14,8 @@
 }
 
 code, pre { overflow-x: scroll; }
+
+sup { font-size: small; }
 
 /* Reset box-sizing */
 *,
