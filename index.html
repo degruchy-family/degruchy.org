@@ -139,12 +139,15 @@
 					fancy function syntax. You <i>define</i> them in
 					much the same way you would a function: </p>
 
+<figure>
 <code>
 <pre>(define-skeleton name
   "doc string"
   "What is your name? "
   "Hello, " str)</pre>
 </code>
+<figcaption>A <em>very</em> simple skeleton</figcaption>
+</figure>
 
 					<p>Part of my reasoning for this is that you can
 					do all sorts of werid stuff inside skeletons, like
@@ -189,12 +192,15 @@
 					like how it integrates with <code>abbrev</code>
 					for easier insertion of snippets.</p>
 
+<figure>
 <code><pre>;; Example from M-x edit-abbrevs &lt;RET&gt;
 ;; This runs the 'name' skeleton when you insert
 ;; whitespace after typing "hello" in an org buffer
 (org-mode-abbrev-table)
 
 "hello" 0 "" name</pre></code>
+<figcaption>A <em>very simple</em> example of what you might see or set via <pre>M-x edit-abbrevs</pre></figcaption>
+</figure>
 
 					<p>I'm going to head back into the manual. It's
 					not always an obvious read, but there is usually
