@@ -42,6 +42,82 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220815-tiling-on-laptops">
+				<header>
+					<h2 class="p-name entry-title">
+						Tiling on Laptops
+						<a href="#20220815-tiling-on-laptops" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-08-15T13:18:39-0400">13:18:39 on 2022-08-15</time>
+				</header>
+				<section class="article-content e-content">
+					<p>I, recently, decided to switch to i3 because I
+					felt like I could be more efficient with my
+					windows and handle more parts of the system with
+					better tooling that I could directly control. This
+					is not new, I used to use i3 on my desktop, paired
+					with two monitors, it <em>was</em> pretty
+					efficient. However, those were two 1920x1080
+					displays, and not a (mostly) single 1366x768
+						display.</p>
+					<p>My trip report is that i3 is not really viable
+					on small laptop displays. By "small", I mean low
+					resolution. Having limited pixels makes it
+					difficult to manage side-by-side windows without
+					resorting to using the tabbed window layout, or
+					selectivively full-screening them. For some cases,
+					it's fine. I can swap the vertical split mode for
+					the horizontal one, and use a terminal under the
+					browser, for example. However, lots of other cases
+					are just more annoying. I have to keep a sort of
+					mental state of how the next window is going to
+					open, and if that's going to make it more
+					difficult to manage. I can set floating on
+					different items, but finding them without them
+					being sticked to the top can be frustrating.
+					Actually, app management in general is
+					frustrating. Trying to switch between apps, can be
+					slower and tedious. If I need to find a specific
+					window, often I need to use another program to
+					find it. Where as on a "stacking" window manager,
+					I can alt-tab my way through windows. There are
+					doubless ways to fix these kinds of shortcomings,
+					but the small real-estate and the somewhat limited
+					keyboarding space makes it difficult to really
+					feel more productive.</p>
+					<p>The other issue I ran into is that laptops have
+					a lot of ephemeral parts. Things like docking
+					stations, monitors, keyboards, mice and need to
+					frequently change wireless or wired networks. All
+					of these things <em>can</em> be managed
+					individually just fine, but having it all work in
+					concert is frustrating. When docking and
+					undocking, I found I had to run scripts to
+					manually rearrange my display layout, sometimes
+					leaving me with a freshly undocked laptop with
+					nothing on the screen until I blindly ran a script
+					to reset it. The issue compounds itself when they
+					keyboard layout changes from the internal to an
+					external or vice-versa. A keyboard mapping for
+					swapping the <kbd>capslock</kbd>
+					and <kbd>ctrl</kbd> keys will break in such a
+					situation, as the mapping is usually only good for
+					one keyboard.</p>
+					<p>Using something like KDE, on the otherhand,
+					had/has none of these problems. Docking and
+					undocking do "the right things". Networking, and
+					other connectivity management are handled
+					seamlessly, and keyboard mappings stay applied to
+					any keyboard plugged in. It's really nice.</p>
+					<p>While I love i3 and tiling as
+					such <em>neat</em> solutions to the multi-window
+					interface metaphor, I don't think they're well
+					suited for mobile devices. That's not a bad thing.
+					They have their niche, just like "windows"-like
+					desktops work well for laptops, but not for
+					tablets or phones.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220805-it-s-been-a-while">
 				<header>
 					<h2 class="p-name entry-title">
@@ -260,19 +336,17 @@
 					href="https://nullprogram.com/blog/2017/08/22/">ran
 					across a blog post that fixed all this</a> for me
 						with the simplest inclusion.</p>
-					<p>
-						<figure>
-							<code>
-								<pre>
+					<figure>
+						<code>
+							<pre>
 (defun my-compile ()
   (interactive)
   (let ((default-directory (locate-dominating-file "." "Makefile")))
     (compile "make")))
-								</pre>
-							</code>
-						</figure>
-                        <figcaption>From the blog post.</figcaption>
-					</p>
+							</pre>
+						</code>
+					</figure>
+                    <figcaption>From the blog post.</figcaption>
 					<p><em>Of course</em> Emacs has a tool to do this.
 					Apparently this <code>locate-dominating-file</code> is
 						oft-underused, but wow, what a difference!</p>
