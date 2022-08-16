@@ -42,6 +42,55 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220816-eshell-is-my-jam">
+				<header>
+					<h2 class="p-name entry-title">
+						Eshell Is My Jam
+						<a href="#20220816-eshell-is-my-jam" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-08-16T17:56:19-0400">17:56:19 on 2022-08-16</time>
+				</header>
+				<section class="article-content e-content">
+					<p>Eshell is such a cool terminal. Not only do I
+					not have to leave Emacs to access a terminal, but
+					this one (in particular amongst the Emacs shell
+					modes) gives me access to TRAMP. Tramp, for the
+					uninitiated, allows you to access remote
+					filesystems of various kinds. Things like SSH,
+					telnet and even things like sudo can be access and
+					even <em>chained together</em> to access what
+					you're looking for. This functionality extends to
+					many parts of Emacs, including Eshell. Accessing
+					remote hosts, like this server, can be as easy
+					as:
+					<figure>
+						<code>
+							<pre>
+$ cd /ssh:me@host:/path/to/directory
+							</pre>
+						</code>
+						<figcaption>An example Tramp-style path</figcaption>
+					</figure>
+					Emacs/Tramp will access the host behind the scenes
+					(prompting for authentication as needed) and give
+					you access. Now I can do things like run commands
+					against the host without having to pop open a new
+						shell and do an ssh/sudo dance.</p>
+					<p>It feels kind of like magic. You can just
+					access hosts naturally and interact with them
+					without breaking your flow, all using a 'single'
+					tool, gaining access to the tooling and functions
+					you've already become accustom to, and likely will
+					be using to manipulate the
+						data <em>anyway</em>.</p>
+					<p>I wish more tools were as accomodating. KDE's
+					Dolphin file browser comes close, but in using KIO
+					for accessing remote filesystems, you end up
+					having to deal with the data in Dolphin not being
+					accessible anywhere else unless you have a newer
+					version that utilizes KIO+FUSE.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220815-tiling-on-laptops">
 				<header>
 					<h2 class="p-name entry-title">
