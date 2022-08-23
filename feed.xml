@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-08-23T18:24:53-0400</updated>
+	<updated>2022-08-23T18:39:53-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,19 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.png</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+
+	<entry>
+		<title>Cosmic Rewind</title>
+		<id>https://degruchy.org/#20220823-cosmic-rewind</id>
+		<link rel="alternate" href="https://degruchy.org/#20220823-cosmic-rewind" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-08-23T18:39:39-0400</updated>
+		<published>2022-08-23T18:39:39-0400</published>
+		<content />
+	</entry>
 
 	<entry>
 		<title>Voted</title>
