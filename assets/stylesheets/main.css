@@ -139,6 +139,8 @@ article header a.featured { display: block; }
 ul.shell-steps
 {
 	font-family: monospace;
+	list-style-type: none;
+	padding: 0;
 }
 
 /**
