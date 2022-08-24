@@ -13,7 +13,7 @@
 	padding: 0;
 }
 
-code, pre { overflow-x: scroll; }
+code, pre, ul.shell-steps { overflow-x: scroll; }
 
 sup { font-size: small; }
 
@@ -133,6 +133,12 @@ article header a.featured { display: block; }
 {
 	width: 128px;
 	text-align: center;
+}
+
+/* Shell steps */
+ul.shell-steps
+{
+	font-family: monospace;
 }
 
 /**

@@ -42,6 +42,60 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220824-toolkit-less-emacs">
+				<header>
+					<h2 class="p-name entry-title">
+						Toolkit-less Emacs
+						<a href="#20220824-toolkit-less-emacs" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-08-24T09:40:46-0400">09:40:46 on 2022-08-24</time>
+				</header>
+				<section class="article-content e-content">
+					<p>There is
+					some <a href="https://lists.gnu.org/archive/html/emacs-devel/2022-08/msg00752.html">recent
+					discussion on the <tt>emacs-devel</tt> mailing
+					list</a> about how using GTK as the UI backing for
+					various "frame" chrome (think: toolbars, menus,
+					etc) is causing more issues than it resolves.
+					Moreover, it has known open issues that they're
+					relying on the GNOME developers to fix. This is
+					unlikely to be fixed. Mainly because the GNOME
+					developers
+					are <a href="https://gitlab.gnome.org/GNOME/gtk/-/merge_requests/4829">a
+					bunch of children who think they know best</a> and
+					have <a href="https://gitlab.gnome.org/GNOME/gtk/-/issues/221">a
+					long-open bug detailing an issue that Emacs has
+					with their system, that they have refused to
+					fix</a>. I don't put any trust in a toolkit that
+						behaves like that.</p>
+					<p>Today, I decided to try and build Emacs on my
+					own. On Debian, it's a pretty easy series of
+						steps:</p>
+                    <ul class="shell-steps">
+                        <li>apt install build-essential git</li>
+                        <li>apt build-dep emacs-lucid</li>
+                        <li>git clone --depth 1 --branch emacs-28 https://git.savannah.gnu.org/git/emacs.git</li>
+                        <li>./autogen.sh</li>
+                        <li>./configure --with-x-toolkit=no</li>
+                        <li>make bootstrap</li>
+                        <li>make install</li>
+                    </ul>
+					<p>This works well and builds a new(er) copy of
+					Emacs than Debian stable contains. While some of
+					my packages have reacted oddly to this, overall,
+					it seems like a good upgrade. I don't use any of
+					the menu/toolbars or the scrollbars, so those UI
+						components don't affect me anyway.</p>
+					<p>The idea of a toolkit-less Emacs that connects
+					to X11 or Wayland is actually a great idea. It
+					leaves the problems of any particular toolkit
+					behind and can do their own thing. While I
+					might <em>prefer</em> QT/KDE, this is the
+					next-best thing (especially since it seems like
+					there isn't much of an appetite for C++ in the
+					Emacs system).</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220823-cosmic-rewind">
 				<header>
 					<h2 class="p-name entry-title">

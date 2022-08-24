@@ -16,6 +16,19 @@
 	<id>https://degruchy.org/</id>
 
 	<entry>
+		<title>Toolkit-less Emacs</title>
+		<id>https://degruchy.org/#20220824-toolkit-less-emacs</id>
+		<link rel="alternate" href="https://degruchy.org/#20220824-toolkit-less-emacs" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-08-24T10:09:09-0400</updated>
+		<published>2022-08-24T10:09:09-0400</published>
+		<content />
+	</entry>
+
+	<entry>
 		<title>Cosmic Rewind</title>
 		<id>https://degruchy.org/#20220823-cosmic-rewind</id>
 		<link rel="alternate" href="https://degruchy.org/#20220823-cosmic-rewind" />
