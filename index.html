@@ -42,6 +42,43 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220830-making-image-thumbnails-is-hard">
+				<header>
+					<h2 class="p-name entry-title">
+						Making Image Thumbnails is Hard
+						<a href="#20220830-making-image-thumbnails-is-hard" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-08-30T11:52:22-0400">11:52:22 on 2022-08-30</time>
+				</header>
+				<section class="article-content e-content">
+					<p>For this site, making image thumbnails is not
+					an automated process. Generally, it looks like
+						this:</p>
+                    <figure>
+						<ul class="shell-steps">
+							<li>fdfind -e jpg -x convert {} -define webp:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.webp</li>
+							<li>fdfind -e jpg -x convert {} -define heif:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.heif</li>
+							<li>fdfind -e jpg -x convert {} -define jpeg:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.jpg</li>
+						</ul>
+                        <figcaption>I'm using <tt>fdfind</tt> here to
+                        facilitate the extent that I have actually
+                        'automated' anything</figcaption>
+                    </figure>
+					<p>Then I move the files to where I need them.
+					I <em>constantly</em> have to look this
+					information up, because when I use it, I always
+					forget some options, which result (more often than
+					not) in images that aren't square, but at least
+						appropriately sized to 128px on one side.</p>
+					<p>It's to the point that I have an Org-mode file
+					dedicated to ensuring that I have that command
+					above cemented somewhere that I can find it. I'm
+					not sure why I don't write a shell script to do
+					this for me, but I imagine I'd even forget I
+					had <em>that</em>.</p>
+				</section>
+			</article>
+
 			<article class="hentry h-entry" id="20220829-disney-s-star-wars-starcruiser">
 				<header>
 					<h2 class="p-name entry-title">
@@ -158,7 +195,7 @@
 						<picture>
 							<source srcset="/assets/images/posts/2022-08-24/emacs-newsticker.heic" type="image/heic">
 							<source srcset="/assets/images/posts/2022-08-24/emacs-newsticker.webp" type="image/webp">
-							<img href="/assets/images/posts/2022-08-24/emacs-newsticker.jpg" alt="Emacs 'newsticker' mode, default configuration" loading="lazy">
+							<img href="/assets/images/posts/2022-08-24/emacs-newsticker.jpg" alt="Emacs 'newsticker' mode, default configuration" height="381" width="720" loading="lazy">
 						</picture>
 						<figcaption>Emacs 'newsticker' mode, default configuration</figcaption>
 					</figure>
@@ -241,7 +278,7 @@
 						<picture>
 							<source srcset="/assets/images/posts/2022-08-23/cosmic-rewind.heic" type="image/heic">
 							<source srcset="/assets/images/posts/2022-08-23/cosmic-rewind.webp" type="image/webp">
-							<img href="/assets/images/posts/2022-08-23/cosmic-rewind.jpg" alt="I got to ride Guardians of the Galaxy: Cosmic Rewind" loading="lazy">
+							<img href="/assets/images/posts/2022-08-23/cosmic-rewind.jpg" alt="I got to ride Guardians of the Galaxy: Cosmic Rewind" height="831" width="720" loading="lazy">
 						</picture>
 						<figcaption>I got to ride Cosmic Rewind!</figcaption>
 					</figure>
@@ -283,7 +320,7 @@
 						<picture>
 							<source srcset="/assets/images/posts/2022-08-23/voted.heic" type="image/heic">
 							<source srcset="/assets/images/posts/2022-08-23/voted.webp" type="image/webp">
-							<img href="/assets/images/posts/2022-08-23/voted.jpg" alt="I voted!" loading="lazy">
+							<img href="/assets/images/posts/2022-08-23/voted.jpg" alt="I voted!" height="540" width="720" loading="lazy">
 						</picture>
 						<figcaption>I voted!</figcaption>
 					</figure>
@@ -596,7 +633,7 @@ $ cd /ssh:me@host:/path/to/directory
 							<picture>
 								<source srcset="/assets/images/posts/2022-08-04/ordinator-swim_tn.heic" type="image/heic">
 								<source srcset="/assets/images/posts/2022-08-04/ordinator-swim_tn.webp" type="image/webp">
-								<img src="/assets/images/posts/2022-08-04/ordinator-swim_tn.jpg" alt="But I'm watching you..." loading="lazy">
+								<img src="/assets/images/posts/2022-08-04/ordinator-swim_tn.jpg" alt="But I'm watching you..." height="405" width="720" loading="lazy">
 							</picture>
 							<figcaption>But I'm <em>watching</em> you...</figcaption>
 						</figure>
@@ -707,7 +744,7 @@ $ cd /ssh:me@host:/path/to/directory
 							<picture>
 								<source srcset="/assets/images/posts/2022-07-21/shame.heic" type="image/heic">
 								<source srcset="/assets/images/posts/2022-07-21/shame.webp" type="image/webp">
-								<img src="/assets/images/posts/2022-07-21/shame.jpg" alt="My shame" loading="lazy">
+								<img src="/assets/images/posts/2022-07-21/shame.jpg" alt="My shame" height="640" width="480" loading="lazy">
 							</picture>
 							<figcaption>My shame</figcaption>
 						</figure>
@@ -886,7 +923,7 @@ $ cd /ssh:me@host:/path/to/directory
 						<figure>
 							<picture>
 								<source srcset="/assets/images/posts/2022-07-07/home.webp" type="image/webp">
-								<img src="/assets/images/posts/2022-07-07/home.jpg" alt="Home, no longer" loading="lazy">
+								<img src="/assets/images/posts/2022-07-07/home.jpg" alt="Home, no longer" height="540" width="720" loading="lazy">
 							</picture>
 							<figcaption>Home, no longer</figcaption>
 						</figure>
