@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-08-30T12:01:12-0400</updated>
+	<updated>2022-09-06T17:12:36-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -15,6 +15,30 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 
+	<entry>
+		<title>She-Hulk</title>
+		<id>https://degruchy.org/#20220906-she-hulk</id>
+		<link rel="alternate" href="https://degruchy.org/#20220906-she-hulk" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-09-06T17:12:21-0400</updated>
+		<published>2022-09-06T17:12:21-0400</published>
+		<content />
+	</entry>
+	<entry>
+		<title>Temptation of Org</title>
+		<id>https://degruchy.org/#20220906-temptation-of-org</id>
+		<link rel="alternate" href="https://degruchy.org/#20220906-temptation-of-org" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-09-06T16:54:07-0400</updated>
+		<published>2022-09-06T16:54:07-0400</published>
+		<content />
+	</entry>
 	<entry>
 		<title>Making Image Thumbnails is Hard</title>
 		<id>https://degruchy.org/#20220830-making-image-thumbnails-is-hard</id>
