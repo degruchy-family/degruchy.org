@@ -16,6 +16,19 @@
 	<id>https://degruchy.org/</id>
 
 	<entry>
+		<title>R.I.P. Queen Elizabeth II</title>
+		<id>https://degruchy.org/#20220908-r-i-p-queen-elizabeth-ii</id>
+		<link rel="alternate" href="https://degruchy.org/#20220908-r-i-p-queen-elizabeth-ii" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-09-08T13:56:11-0400</updated>
+		<published>2022-09-08T13:56:11-0400</published>
+		<content />
+	</entry>
+
+	<entry>
 		<title>She-Hulk</title>
 		<id>https://degruchy.org/#20220906-she-hulk</id>
 		<link rel="alternate" href="https://degruchy.org/#20220906-she-hulk" />
