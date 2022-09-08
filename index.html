@@ -52,18 +52,18 @@
 				</header>
 				<section class="article-content e-content">
 					<p><a
-					href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Image_002dDired.html"><tt>image-dired</tt></a>
+					href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Image_002dDired.html"><code>image-dired</code></a>
 					is not a new tool to me, I have been aware of it
 					for some time now. It has always proven as a sort
 					of sub-optimal image browser to me. However, it
 					seems I've "Been Using it Wrong"&trade; this whole
-					time. You can use <tt>dired</tt> to mark images,
-					then <tt>image-dired-display-thumbs</tt> to
+					time. You can use <code>dired</code> to mark images,
+					then <code>image-dired-display-thumbs</code> to
 					generate a new buffer with their thumbnails. Neat!
 					I had frequently been using the bare
-					<tt>image-dired</tt> command, which did
+					<code>image-dired</code> command, which did
 					<em>all</em> of the images in a buffer.</p>
-					<p>I, also, didn't know that <tt>image-dired</tt>
+					<p>I, also, didn't know that <code>image-dired</code>
 					could tag photos and keep them in a seperate
 					database. What a neat idea, one I could see
 					working for a small collection of photos and
@@ -104,8 +104,8 @@
 					You can make it your writing swiss-army-knife, or
 					your tool for operating on remote machines, or
 					your email platform, or even your music and
-					chatting tool with <tt>emms</tt> and
-					<tt>circe</tt>. As long as the information can be
+					chatting tool with <code>emms</code> and
+					<code>circe</code>. As long as the information can be
 					processed as text, then Emacs can be sculpted to
 					work with it.</p>
 				</section>
@@ -187,7 +187,7 @@
 				<section class="article-content e-content">
 					<p>As this blog gets longer, the larger the
 					tempation of using some sort of organizational
-					system looms large. Using Emacs, <tt>org-mode</tt>
+					system looms large. Using Emacs, <code>org-mode</code>
 					is a natural draw. It's integrated with Emacs, can
 					be used for all manner of things, and has a
 					handy/clean export feature that can generate whole
@@ -226,7 +226,7 @@
 							<li>fdfind -e jpg -x convert {} -define webp:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.webp</li>
 							<li>fdfind -e jpg -x convert {} -define jpeg:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.jpg</li>
 						</ul>
-                        <figcaption>I'm using <tt>fdfind</tt> here to
+                        <figcaption>I'm using <code>fdfind</code> here to
                         facilitate the extent that I have actually
                         'automated' anything</figcaption>
                     </figure>
@@ -382,7 +382,7 @@
 				<section class="article-content e-content">
 					<p>There is
 					some <a href="https://lists.gnu.org/archive/html/emacs-devel/2022-08/msg00752.html">recent
-					discussion on the <tt>emacs-devel</tt> mailing
+					discussion on the <code>emacs-devel</code> mailing
 					list</a> about how using GTK as the UI backing for
 					various "frame" chrome (think: toolbars, menus,
 					etc) is causing more issues than it resolves.
