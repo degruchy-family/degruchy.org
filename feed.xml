@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-09-08T13:58:41-0400</updated>
+	<updated>2022-09-08T17:02:31-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,18 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.png</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+	<entry>
+		<title>More Emacs Archeology</title>
+		<id>https://degruchy.org/#20220908-more-emacs-archeology</id>
+		<link rel="alternate" href="https://degruchy.org/#20220908-more-emacs-archeology" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-09-08T17:02:14-0400</updated>
+		<published>2022-09-08T17:02:14-0400</published>
+		<content />
+	</entry>
 
 	<entry>
 		<title>R.I.P. Queen Elizabeth II</title>

@@ -42,6 +42,75 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220908-more-emacs-archeology">
+				<header>
+					<h2 class="p-name entry-title">
+						More Emacs Archeology
+						<a href="#20220908-more-emacs-archeology" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-09-08T15:12:58-0400">15:12:58 on 2022-09-08</time>
+				</header>
+				<section class="article-content e-content">
+					<p><a
+					href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Image_002dDired.html"><tt>image-dired</tt></a>
+					is not a new tool to me, I have been aware of it
+					for some time now. It has always proven as a sort
+					of sub-optimal image browser to me. However, it
+					seems I've "Been Using it Wrong"&trade; this whole
+					time. You can use <tt>dired</tt> to mark images,
+					then <tt>image-dired-display-thumbs</tt> to
+					generate a new buffer with their thumbnails. Neat!
+					I had frequently been using the bare
+					<tt>image-dired</tt> command, which did
+					<em>all</em> of the images in a buffer.</p>
+					<p>I, also, didn't know that <tt>image-dired</tt>
+					could tag photos and keep them in a seperate
+					database. What a neat idea, one I could see
+					working for a small collection of photos and
+						images.</p>
+					<p>I keep finding these little tools. In addition
+					to these little internal pieces, Emacs has such a
+					delightful amount of customization that tools
+						practically write themselves:</p>
+                    <figure>
+                        <code>
+                            <pre>
+(defun sentin/break ()
+"Break a sentence out and work it in a new buffer."
+  (interactive)
+  (backward-sentence)
+  (kill-sentence)
+  (switch-to-buffer-other-window "*sent-breakt*")
+  (erase-buffer)
+  (yank))
+
+(defun sentin/choose ()
+  "Choose a sentence and go back to the other window."
+  (interactive)
+  (backward-sentence)
+  (kill-sentence)
+  (other-window 1)
+  (kill-buffer "*sent-breakt*")
+  (yank)
+  (delete-other-windows))
+                            </pre>
+                        </code>
+                        <figcaption>A quick-and-dirty set of functions
+                        that let you focus on a particular sentence in
+                        a seperate scratch buffer.</figcaption>
+                    </figure>
+					<p>Little tools like that allow you to sculpt
+					Emacs into not just a programmer's text editor.
+					You can make it your writing swiss-army-knife, or
+					your tool for operating on remote machines, or
+					your email platform, or even your music and
+					chatting tool with <tt>emms</tt> and
+					<tt>circe</tt>. As long as the information can be
+					processed as text, then Emacs can be sculpted to
+					work with it.</p>
+				</section>
+			</article>
+
 			<article class="hentry h-entry" id="20220908-r-i-p-queen-elizabeth-ii">
 				<header>
 					<h2 class="p-name entry-title">
