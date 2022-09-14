@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+		<title>Mindustry</title>
+		<id>https://degruchy.org/#20220914-mindustry</id>
+		<link rel="alternate" href="https://degruchy.org/#20220914-mindustry" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-09-14T17:08:16-0400</updated>
+		<published>2022-09-14T17:08:16-0400</published>
+		<content />
+	</entry>
+	<entry>
 		<title>My Favorite iOS 16 Feature</title>
 		<id>https://degruchy.org/#20220913-my-favorite-i-os-16-feature</id>
 		<link rel="alternate" href="https://degruchy.org/#20220913-my-favorite-i-os-16-feature" />
