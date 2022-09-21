@@ -15,15 +15,15 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
-		<title>Mindustry</title>
-		<id>https://degruchy.org/#20220914-mindustry</id>
-		<link rel="alternate" href="https://degruchy.org/#20220914-mindustry" />
+		<title>Plumbing the Depths: Rec Mode</title>
+		<id>https://degruchy.org/#20220921-plumbing-the-depths-rec-mode</id>
+		<link rel="alternate" href="https://degruchy.org/#20220921-plumbing-the-depths-rec-mode" />
 		<author>
 			<name>Nathan DeGruchy</name>
 			<email>nathan@degruchy.org</email>
 		</author>
-		<updated>2022-09-14T17:08:16-0400</updated>
-		<published>2022-09-14T17:08:16-0400</published>
+		<updated>2022-09-21T16:55:55-0400</updated>
+		<published>2022-09-21T16:55:55-0400</published>
 		<content />
 	</entry>
 	<entry>
@@ -36,6 +36,18 @@
 		</author>
 		<updated>2022-09-20T17:03:25-0400</updated>
 		<published>2022-09-20T17:03:25-0400</published>
+		<content />
+	</entry>
+	<entry>
+		<title>Mindustry</title>
+		<id>https://degruchy.org/#20220914-mindustry</id>
+		<link rel="alternate" href="https://degruchy.org/#20220914-mindustry" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-09-14T17:08:16-0400</updated>
+		<published>2022-09-14T17:08:16-0400</published>
 		<content />
 	</entry>
 	<entry>

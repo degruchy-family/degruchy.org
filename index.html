@@ -42,6 +42,64 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220921-plumbing-the-depths">
+				<header>
+					<h2 class="p-name entry-title">
+						Plumbing the Depths: Rec Mode
+						<a href="#20220921-plumbing-the-depths" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-09-21T16:32:24-0400">16:32:24 on 2022-09-21</time>
+				</header>
+				<section class="article-content e-content">
+					<p>Another article about disused Emacs features
+						that I likely wont use? Youbetcha!</p>
+					<p>Today's bit of archaeology is
+					<code>rec-mode</code>. It's a mode that is meant
+					to be used in conjunction with the <a
+					href="https://www.gnu.org/software/recutils/">GNU
+					Recutils package</a>. These tools generate,
+					maintain and operate on plain-text database of
+					<em>records</em>. These can be used for a wide
+					variety of data, from loaned books, to movies
+					watched to <a
+					href="https://git.gnunet.org/gana.git/tree/gnu-name-system-record-types/registry.rec">a
+					sort of DNS-esque databse for GNUNet</a>. Handy
+					stuff. In Emacs, this functionality is exposed
+					when you open a file with the extension of
+					<code>.rec</code>. By default, you get a read-only
+					<code>narrow'd</code> view of records that you can
+					page through and manipulate. Typically, you're
+					supposed to use the command-line tool
+					<code>recins</code> to add items (so that the data
+					integrity can be maintained), but of course Emacs
+					can edit that buffer, as well.</p>
+					<p>I am, proverbially, kicking the tires on this
+					mode by making a simple address book that can be
+					queried for things like email addresses, names and
+					phone numbers. The nice thing about this that
+					<em>it's just text</em>. I can manipulate it,
+					compress it, encrypt it, slice it, dice it and
+					even store it in a version control system like
+					<code>git</code>. I don't have to worry about the
+					format going out-of-date, or not being able to
+					read it in the future. Again, <em>it's just
+					text</em>. Obviously, there are some downsides. A
+					lot of downsides, actually. It's really a nice
+					solution, though.</p>
+					<p><code>rec-mode</code> has some nice features.
+					You can query the database and get information
+					about the contents, right inside Emacs. There is a
+					lot of nice features and because it's text, and
+					because the features use standard lisp functions,
+					you can integrate it with all sorts of other Emacs
+					tooling. Even <code>org-mode</code> has query
+						support to look up data in your database(s).</p>
+					<p>While there are some rough edges with editing
+					things, and I had to come up with my own skeletons
+					for adding new records, I feel like there is a lot
+					that can be done with this tool.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220920-i-am-so-tired">
 				<header>
 					<h2 class="p-name entry-title">
