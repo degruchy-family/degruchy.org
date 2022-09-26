@@ -42,6 +42,68 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220926-emacs-selection-woes">
+				<header>
+					<h2 class="p-name entry-title">
+						Emacs Selection Woes
+						<a href="#20220926-emacs-selection-woes" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-09-26T14:59:19-0400">14:59:19 on 2022-09-26</time>
+				</header>
+				<section class="article-content e-content">
+					<p>Yeah, another post today. How about that?</p>
+					<p>So, Emacs has an interesting problem. Selecting
+					things is... unintuitive and often just wrong. For
+					example, in a stock Emacs system,
+					pressing <code>M-@</code> (Alt-Shift-2) will
+					run <code>mark-word</code>. This should do what
+					you think it does: Mark/select a word in
+					highlighting so that you can modify it somehow.
+					However, if you're not at the <em>beginning</em>
+					of that word, then <code>mark-word</code>
+					does <em>not</em> do what you might believe. In
+					fact, all it does is highlight to the end of that
+					word, leaving any other letters before the point
+						just sort of hanging out there.</p>
+					<p>Now, there are methods of fixing this in elisp.
+					As a matter of fact, there is an excellent package
+					called <code>expand-region</code> that
+					intellegently expands a selection, moving outward
+					(or inward) as you repeat the command. That's kind
+					of the problem, though. I shouldn't <em>need</em>
+					an external package to do stuff like "selecting
+					text between quotes" or "selecting text inside of
+					a function". Emacs is smart and has been around
+					for 40(?) years! This should be a solved problem
+						by now.</p>
+					<p>Of course it is. Well, not really, but there
+					are some built-in tools that don't work really
+					well. Mainly, selecting objects can be done with
+					some wrapping around <code>thing-at-point</code>,
+					which gives you information around what the cursor
+					is on. This would allow you to write code to then
+					add a mark to the extents of that object, and even
+					move outward, as <code>expand-region</code>
+						does.</p>
+					<p>To that end, Drew Adams has a elisp library
+					that does... some of that. It certainly wraps the
+					<code>thing-at-point</code> code well enough that
+					it can be used by a mere mortal. However, the
+					functionality is lacking. If I want to select
+					successive words, I can cycle through the
+					selection objects, but none of them usually fit.
+					I, more often than not, end up having to wrangle
+					some part of it with manual movement
+					adjustments.</p>
+					<p>Maybe I'm just pampered by the idea that
+					<code>expand-region</code> is <em>so close</em> to
+					the solution that I'd like, that not having the
+					building blocks to begin with is frustrating.
+					Especially since I'm finding <em>so much</em> of
+					Emacs built-in functionality has my needs covered
+					nicely.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220926-spider-man">
 				<header>
 					<h2 class="p-name entry-title">
