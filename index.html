@@ -311,7 +311,6 @@
 					to these little internal pieces, Emacs has such a
 					delightful amount of customization that tools
 						practically write themselves:</p>
-                    <figure>
                         <code>
                             <pre>
 (defun sentin/break ()
@@ -334,10 +333,6 @@
   (delete-other-windows))
                             </pre>
                         </code>
-                        <figcaption>A quick-and-dirty set of functions
-                        that let you focus on a particular sentence in
-                        a seperate scratch buffer.</figcaption>
-                    </figure>
 					<p>Little tools like that allow you to sculpt
 					Emacs into not just a programmer's text editor.
 					You can make it your writing swiss-army-knife, or
@@ -460,15 +455,8 @@
 					<p>For this site, making image thumbnails is not
 					an automated process. Generally, it looks like
 						this:</p>
-                    <figure>
-						<ul class="shell-steps">
-							<li>fdfind -e jpg -x convert {} -define webp:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.webp</li>
-							<li>fdfind -e jpg -x convert {} -define jpeg:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.jpg</li>
-						</ul>
-                        <figcaption>I'm using <code>fdfind</code> here to
-                        facilitate the extent that I have actually
-                        'automated' anything</figcaption>
-                    </figure>
+					<p><code>fdfind -e jpg -x convert {} -define webp:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.webp</code></p>
+					<p>><code>fdfind -e jpg -x convert {} -define jpeg:size=128x128 -thumbnail '128x128' -background white -gravity center -extent 128x128 -strip -unsharp 0x.5 {.}_thumb.jpg</code></p>
 					<p>Then I move the files to where I need them.
 					I <em>constantly</em> have to look this
 					information up (to the point that I have an Emacs
@@ -639,15 +627,13 @@
 					<p>Today, I decided to try and build Emacs on my
 					own. On Debian, it's a pretty easy series of
 						steps:</p>
-                    <ul class="shell-steps">
-                        <li>apt install build-essential git</li>
-                        <li>apt build-dep emacs-lucid</li>
-                        <li>git clone --depth 1 --branch emacs-28 https://git.savannah.gnu.org/git/emacs.git</li>
-                        <li>./autogen.sh</li>
-                        <li>./configure --with-x-toolkit=no</li>
-                        <li>make bootstrap</li>
-                        <li>make install</li>
-                    </ul>
+					<p><code>apt install build-essential git</code></p>
+                    <p><code>apt build-dep emacs-lucid</code></p>
+                    <p><code>git clone --depth 1 --branch emacs-28 https://git.savannah.gnu.org/git/emacs.git</code></p>
+                    <p><code>./autogen.sh</code></p>
+                    <p><code>./configure --with-x-toolkit=no</code></p>
+                    <p><code>make bootstrap</code></p>
+                    <p><code>make install</code></p>
 					<p>This works well and builds a new(er) copy of
 					Emacs than Debian stable contains. While some of
 					my packages have reacted oddly to this, overall,
@@ -745,14 +731,7 @@
 					extends to many parts of Emacs, including Eshell.
 					Accessing remote hosts, like this server, can be
 					as easy as:
-					<figure>
-						<code>
-							<pre>
-$ cd /ssh:me@host:/path/to/directory
-							</pre>
-						</code>
-						<figcaption>An example Tramp-style path</figcaption>
-					</figure>
+					<p><code>$ cd /ssh:me@host:/path/to/directory</code></p>
 					Emacs/Tramp will access the host behind the scenes
 					(prompting for authentication as needed) and give
 					you access. Now I can do things like run commands
@@ -999,15 +978,12 @@ $ cd /ssh:me@host:/path/to/directory
 					like how it integrates with <code>abbrev</code>
 					for easier insertion of snippets.</p>
 
-<figure>
-<code><pre>;; Example from M-x edit-abbrevs &lt;RET&gt;
+<p><code><pre>;; Example from M-x edit-abbrevs &lt;RET&gt;
 ;; This runs the 'name' skeleton when you insert
 ;; whitespace after typing "hello" in an org buffer
 (org-mode-abbrev-table)
 
-"hello" 0 "" name</pre></code>
-<figcaption>A <em>very simple</em> example of what you might see or set via <code>M-x edit-abbrevs</code></figcaption>
-</figure>
+"hello" 0 "" name</pre></code></p>
 
 					<p>I'm going to head back into the manual. It's
 					not always an obvious read, but there is usually
