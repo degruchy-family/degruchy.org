@@ -54,17 +54,17 @@
 					<p>Yeah, another post today. How about that?</p>
 					<p>So, Emacs has an interesting problem. Selecting
 					things is... unintuitive and often just wrong. For
-					example, in a stock Emacs system,
-					pressing <code>M-@</code> (Alt-Shift-2) will
-					run <code>mark-word</code>. This should do what
-					you think it does: Mark/select a word in
-					highlighting so that you can modify it somehow.
-					However, if you're not at the <em>beginning</em>
-					of that word, then <code>mark-word</code>
-					does <em>not</em> do what you might believe. In
-					fact, all it does is highlight to the end of that
-					word, leaving any other letters before the point
-						just sort of hanging out there.</p>
+					example, in a stock Emacs system, pressing
+					<code>M-@</code> (Alt-Shift-2) will run
+					<code>mark-word</code>. This should do what you
+					think it does: Mark/select a word in highlighting
+					so that you can modify it somehow. However, if
+					you're not at the <em>beginning</em> of that word,
+					then <code>mark-word</code> does <em>not</em> do
+					what you might believe. In fact, all it does is
+					highlight to the end of that word, leaving any
+					other letters before the point just sort of
+					hanging out there.</p>
 					<p>Now, there are methods of fixing this in elisp.
 					As a matter of fact, there is an excellent package
 					called <code>expand-region</code> that
@@ -75,7 +75,7 @@
 					text between quotes" or "selecting text inside of
 					a function". Emacs is smart and has been around
 					for 40(?) years! This should be a solved problem
-						by now.</p>
+					by now.</p>
 					<p>Of course it is. Well, not really, but there
 					are some built-in tools that don't work really
 					well. Mainly, selecting objects can be done with
@@ -84,7 +84,7 @@
 					is on. This would allow you to write code to then
 					add a mark to the extents of that object, and even
 					move outward, as <code>expand-region</code>
-						does.</p>
+					does.</p>
 					<p>To that end, <a
 					href="https://www.emacswiki.org/emacs/thing-cmds.el">Drew
 					Adams has a elisp library that does... some of
