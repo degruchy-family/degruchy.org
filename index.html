@@ -42,6 +42,110 @@
 			<header>
 				<h1>I built this.</h1>
 			</header>
+			<article class="hentry h-entry" id="20220926-spider-man">
+				<header>
+					<h2 class="p-name entry-title">
+						Spider-Man
+						<a href="#20220926-spider-man" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-09-26T11:03:10-0400">11:03:10 on 2022-09-26</time>
+				</header>
+				<section class="article-content e-content">
+					<p>I love this short Spider-Man comic that I found
+					on Tumblr(?) so many moons ago. It absolutely
+					captures the spirit of the character. Dorky,
+					werid, but ultimately a good guy who is willing to
+					help whenever he can, even if it's just walking a
+					girl home.</p>
+					<section class="gallery">
+						<ul>
+							<li>
+								<a href="/assets/images/posts/2022-09-26/spider-man-walk_1.jpg">
+									<figure>
+										<picture>
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_1_tn.heic" type="image/heic" />
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_1_tn.webp" type="image/webp" />
+											<img href="/assets/images/posts/2022-09-26/spider-man-walk_1_tn.jpg" alt="Spider-man comic I found on Tumblr, page 1" height="128" width="128" loading="lazy" />
+										</picture>
+										<figcaption>Spider-man comic I found on Tumblr, page 1</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="/assets/images/posts/2022-09-26/spider-man-walk_2.jpg">
+									<figure>
+										<picture>
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_2_tn.heic" type="image/heic" />
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_2_tn.webp" type="image/webp" />
+											<img href="/assets/images/posts/2022-09-26/spider-man-walk_2_tn.jpg" alt="Spider-man comic I found on Tumblr, page 2" height="" width="" loading="lazy" />
+										</picture>
+										<figcaption>Spider-man comic I found on Tumblr, page 2</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="/assets/images/posts/2022-09-26/spider-man-walk_3.jpg">
+									<figure>
+										<picture>
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_3_tn.heic" type="image/heic" />
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_3_tn.webp" type="image/webp" />
+											<img href="/assets/images/posts/2022-09-26/spider-man-walk_3_tn.jpg" alt="Spider-man comic I found on Tumblr, page 3" height="" width="" loading="lazy" />
+										</picture>
+										<figcaption>Spider-man comic I found on Tumblr, page 3</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="/assets/images/posts/2022-09-26/spider-man-walk_4.jpg">
+									<figure>
+										<picture>
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_4_tn.heic" type="image/heic" />
+											<source srcset="/assets/images/posts/2022-09-26/spider-man-walk_4_tn.webp" type="image/webp" />
+											<img href="/assets/images/posts/2022-09-26/spider-man-walk_4_tn.jpg" alt="Spider-man comic I found on Tumblr, page 4" height="" width="" loading="lazy" />
+										</picture>
+										<figcaption>Spider-man comic I found on Tumblr, page 4</figcaption>
+									</figure>
+								</a>
+							</li>
+						</ul>
+				</section>
+			</article>
+			<article class="hentry h-entry" id="20220926-emacs-archeology-imenu">
+				<header>
+					<h2 class="p-name entry-title">
+						Emacs Archeology: IMenu
+						<a href="#20220926-emacs-archeology-imenu" class="u-url">&#x1F517;</a>
+					</h2>
+					<time class="dt-published published" datetime="2022-09-26T10:08:43-0400">10:08:43 on 2022-09-26</time>
+				</header>
+				<section class="article-content e-content">
+					<p>This probably sits loosely in the category of
+					"archeology". <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html">IMenu</a>
+					is a tool that allows you to find major sections
+					of a buffer by name. For example, in this HTML
+					document, if I were to run <code>M-x imenu</code>,
+					I would get a listing of all the headline tags
+					(<code>H1</code> through <code>H6</code>) that I
+					could use to quickly jump to that area. Very
+					useful.</p>
+					<p><code>Imenu</code> seems like something that
+					would be awesome if it were better exposed. Much
+					like the other tools that I've explored, there are
+					countless gems in Emacs that get recreated because
+						of their lack of exposure, or poor naming.</p>
+					<p>I <em>am</em> glad to have
+					found <code>Imenu</code> though. It seems like
+					a <em>very</em> useful tool to jump around without
+					having to find another package,
+					like <code>ace-jump</code> or similar. While it
+					may not do everything that those packages can do
+					(<a href="https://xenodium.com/imenu-on-emacs-eshell/">it
+					can be extended</a>, though), I would wager that
+					jumping around is generally more useful around
+					major sections, versus "locally". I don't know, I
+					don't code anymore.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20220922-vaccination">
 				<header>
 					<h2 class="p-name entry-title">
@@ -925,12 +1029,10 @@
 					fancy function syntax. You <i>define</i> them in
 					much the same way you would a function: </p>
 
-<p><code>
-<pre>(define-skeleton name
+<p><pre><code>(define-skeleton name
   "doc string"
   "What is your name? "
-  "Hello, " str)</pre>
-</code></p>
+  "Hello, " str)</code></pre></p>
 
 					<p>Part of my reasoning for this is that you can
 					do all sorts of werid stuff inside skeletons, like
@@ -975,12 +1077,12 @@
 					like how it integrates with <code>abbrev</code>
 					for easier insertion of snippets.</p>
 
-<p><code><pre>;; Example from M-x edit-abbrevs &lt;RET&gt;
+<p><pre><code>;; Example from M-x edit-abbrevs &lt;RET&gt;
 ;; This runs the 'name' skeleton when you insert
 ;; whitespace after typing "hello" in an org buffer
 (org-mode-abbrev-table)
 
-"hello" 0 "" name</pre></code></p>
+"hello" 0 "" name</code></pre></p>
 
 					<p>I'm going to head back into the manual. It's
 					not always an obvious read, but there is usually
@@ -1040,14 +1142,14 @@
 					across a blog post that fixed all this</a> for me
 						with the simplest inclusion.</p>
 					<p>
-						<code>
-							<pre>
+						<pre>
+							<code>
 (defun my-compile ()
   (interactive)
   (let ((default-directory (locate-dominating-file "." "Makefile")))
     (compile "make")))
-							</pre>
-						</code>
+							</code>
+						</pre>
 					</p>
 					<p><em>Of course</em> Emacs has a tool to do this.
 					Apparently this <code>locate-dominating-file</code> is
