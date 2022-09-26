@@ -14,7 +14,7 @@
 	padding: 0;
 }
 
-code, pre, ul.shell-steps { overflow-x: scroll; }
+code, pre { overflow-x: scroll; }
 
 sup { font-size: small; }
 
@@ -137,14 +137,6 @@ article header a.featured { display: block; }
 }
 
 /* Shell steps */
-ul.shell-steps
-{
-	font-family: monospace;
-	list-style-type: none;
-	padding: 0;
-	white-space: nowrap;
-}
-
 /**
  * Fix some image and video scaling issues
  */
@@ -160,16 +152,6 @@ figure
 {
   margin: 0;
   text-align: center;
-}
-
-figure code pre
-{
-	border-color: black;
-	border-style: solid;
-	border-width: 1px 0;
-	font-size: larger;
-	padding-top: 1rem;
-	text-align: left;
 }
 
 figcaption
