@@ -15,12 +15,8 @@ function main() {
 	{
 		timeago.render(eTimes);
 	}
-	else
-	{
-		console.warn("DeGruchy.org: No time blocks found.");
-	}
 
-	return;
+	return true;
 }
 
 document.addEventListener("DOMContentLoaded", main());
