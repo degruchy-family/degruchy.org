@@ -108,6 +108,7 @@ body > header nav ol li
  * Articles
  */
 article { border-top: 1px solid #CCC; }
+article:first-child { border-top: 0; } /* all articles -- except the first one */
 
 article header { margin-bottom: 1rem }
 
