@@ -6,9 +6,6 @@
 
 function main() {
 	const eTimes = document.querySelectorAll("time");
-	const lazyLoad = new LazyLoad({
-		"threshold": 100
-	});
 
 	// Start time ago
 	if(eTimes.length > 0)
