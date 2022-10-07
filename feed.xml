@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-10-04T13:03:46-0400</updated>
+	<updated>2022-10-07T09:55:49-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,18 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.webp</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+	<entry>
+	  <title>Super Maro Bros</title>
+	  <id>https://degruchy.org/#20221007-super-maro-bros</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221007-super-maro-bros" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-10-07T09:55:23-0400</updated>
+	  <published>2022-10-07T09:55:23-0400</published>
+	  <content />
+	</entry>
 	<entry>
 	  <title>Migration: Complete</title>
 	  <id>https://degruchy.org/#20221004-migration-complete</id>

@@ -70,11 +70,8 @@ body > header h1
  */
 article { border-top: 1px solid #CCC; }
 article:first-child { border-top: 0; } /* all articles -- except the first one */
-
 article header { margin-bottom: 1rem }
-
 article header h2 a { text-decoration: none }
-
 article header a.featured { display: block; }
 
 /**
@@ -141,18 +138,4 @@ iframe
 	border: 1px solid black;
 	display: block;
 	width: 100%;
-}
-
-details summary
-{
-	transition-delay: 100ms;
-	transition-duration: 250ms;
-	transition-property: box-shadow;
-}
-
-details[open] summary
-{
-	box-shadow: none;
-	transition-delay: 0ms;
-	transition-duration: 0ms;
 }
