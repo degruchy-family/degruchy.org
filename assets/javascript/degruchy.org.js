@@ -6,7 +6,7 @@
 
 function main() {
 	const eTimes = document.querySelectorAll("time");
-
+	
 	// Start time ago
 	if(eTimes.length > 0)
 	{
@@ -16,4 +16,4 @@ function main() {
 	return true;
 }
 
-document.addEventListener("DOMContentLoaded", main());
+main(); // lets gooo!
