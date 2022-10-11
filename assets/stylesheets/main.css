@@ -140,6 +140,10 @@ iframe
 	width: 100%;
 }
 
+/******************************************************************/
+/* This fixes a 'button' to the bottom of the viewport, scrolling */
+/* smoothly with the user. All without hacky JS.				  */
+/******************************************************************/
 footer #comments
 {
 	background: rgba(255,255,255,0.75);
