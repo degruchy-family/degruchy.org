@@ -139,3 +139,21 @@ iframe
 	display: block;
 	width: 100%;
 }
+
+footer #comments
+{
+	background: rgba(255,255,255,0.75);
+	border-top: 1px solid #CCC;
+	bottom: 0;
+	box-shadow: 1px -5px 15px 2px rgb(181, 181, 181);
+	margin: 0;
+	position: fixed;
+	text-align: center;
+	width: min(45rem, 90%);
+}
+
+footer #comments a
+{
+	display: block;
+	padding: 0.5rem 0;
+}
