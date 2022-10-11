@@ -146,7 +146,7 @@ iframe
 /******************************************************************/
 footer #comments
 {
-	background: rgba(255,255,255,0.75);
+	background: #FFF;
 	border-top: 1px solid #CCC;
 	bottom: 0;
 	box-shadow: 1px -5px 15px 2px rgb(181, 181, 181);
