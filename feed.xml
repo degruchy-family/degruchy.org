@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-10-10T11:20:49-0400</updated>
+	<updated>2022-10-13T10:08:53-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,18 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.webp</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+	<entry>
+	  <title>Web Metrics Considered Harmful (Usually)</title>
+	  <id>https://degruchy.org/#20221010-web-metrics-considered-harmful-usually-</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221013-web-metrics-considered-harmful-usually-" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-10-10T20:48:02-0400</updated>
+	  <published>2022-10-13T10:08:53-0400</published>
+	  <content />
+	</entry>
 	<entry>
 	  <title>Temptation</title>
 	  <id>https://degruchy.org/#20221010-temptation</id>
