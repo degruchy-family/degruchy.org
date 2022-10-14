@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-10-13T10:08:53-0400</updated>
+	<updated>2022-10-14T16:21:57-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,18 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.webp</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+	<entry>
+	  <title>Tailscaling My Network</title>
+	  <id>https://degruchy.org/#20221014-tailscaling-my-network</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221014-tailscaling-my-network" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-10-14T16:21:43-0400</updated>
+	  <published>2022-10-14T16:21:43-0400</published>
+	  <content />
+	</entry>
 	<entry>
 	  <title>She-Hulk Smashes the 4th Wall (and Matt Murdock)</title>
 	  <id>https://degruchy.org/#20221013-she-hulk-smashes-the-4th-wall-and-matt-murdock</id>
