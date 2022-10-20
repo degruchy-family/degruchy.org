@@ -15,11 +15,12 @@
 }
 
 pre { overflow-x: scroll; }
-
 code {
 	background-color: #CCC;
 	font-size: 1rem;
 }
+pre code { display: block; }
+
 
 sup { font-size: small; }
 
