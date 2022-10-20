@@ -14,7 +14,12 @@
 	padding: 0;
 }
 
-code, pre { overflow-x: scroll; }
+pre { overflow-x: scroll; }
+
+code {
+	background-color: #CCC;
+	font-size: 1rem;
+}
 
 sup { font-size: small; }
 
