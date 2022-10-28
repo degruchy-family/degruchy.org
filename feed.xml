@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-10-26T16:27:43-0400</updated>
+	<updated>2022-10-28T09:49:32-0400</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,18 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.webp</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+	<entry>
+	  <title>Elon Buys Twitter</title>
+	  <id>https://degruchy.org/#20221028-elon-buys-twitter</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221028-elon-buys-twitter" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-10-28T09:49:20-0400</updated>
+		<published>2022-10-28T09:49:20-0400</published>
+		<content />
+	</entry>
 	<entry>
 	  <title>Untitled(1)</title>
 	  <id>https://degruchy.org/#20221026-untitled-1</id>
