@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+	  <title>Blog Block</title>
+	  <id>https://degruchy.org/#20221031-blog-block</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221031-blog-block" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-10-31T17:06:56-0400</updated>
+	  <published>2022-10-31T17:06:56-0400</published>
+	  <content />
+	</entry>
+	<entry>
 		<title>Happy Halloween</title>
 		<id>https://degruchy.org/#20221031-happy-halloween</id>
 		<link rel="alternate" href="https://degruchy.org/#20221031-happy-halloween" />
