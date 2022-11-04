@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+	  <title>Off My Meds</title>
+	  <id>https://degruchy.org/#20221104-off-my-meds</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221104-off-my-meds" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-11-04T17:21:38-0400</updated>
+	  <published>2022-11-04T17:21:38-0400</published>
+	  <content />
+	</entry>
+	<entry>
 	  <title>Don't Ever Setup an ActivityPub Instance on Your Domain</title>
 	  <id>https://degruchy.org/#20221102-don-t-ever-setup-an-activity-pub-instance-on-your-domain</id>
 	  <link rel="alternate" href="https://degruchy.org/#20221102-don-t-ever-setup-an-activity-pub-instance-on-your-domain" />
