@@ -9,15 +9,15 @@
 		"prefix": "doart",
 		"scope": "html",
 		"body": [
-			"<article class=\"hentry h-entry\" id=\"$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE-${2:anchor}\">",
+			"<article id=\"$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE-${2:anchor}\">",
 			"\t<header>",
-			"\t\t<h2 class=\"p-name entry-title\">",
+			"\t\t<h2>",
 			"\t\t\t${3:title}",
-			"\t\t\t<a href=\"#$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE-${2:anchor}\" class=\"u-url\">&#x1F517;</a>",
+			"\t\t\t<a href=\"#$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE-${2:anchor}\">&#x1F517;</a>",
 			"\t\t</h2>",
-			"\t\t<time class=\"dt-published published\" datetime=\"$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND-04:00\">$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE on $CURRENT_HOUR:$CURRENT_MINUTE</time>",
+			"\t\t<time datetime=\"$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND-04:00\">$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE on $CURRENT_HOUR:$CURRENT_MINUTE</time>",
 			"\t</header>",
-			"\t<section class=\"article-content e-content\">$0</section>",
+			"\t<section>$0</section>",
 			"</article>"
 		],
 		"description": "DeGruchy.org Article"
