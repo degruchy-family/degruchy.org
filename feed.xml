@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+		<title>My Time with Android</title>
+		<id>https://degruchy.org/#20221107-my-time-with-android</id>
+		<link rel="alternate" href="https://degruchy.org/#20221107-my-time-with-android" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2022-11-08T16:09:24-04:00</updated>
+		<published>2022-11-08T16:09:24-04:00</published>
+		<content />
+	</entry>
+	<entry>
 	  <title>Off My Meds</title>
 	  <id>https://degruchy.org/#20221104-off-my-meds</id>
 	  <link rel="alternate" href="https://degruchy.org/#20221104-off-my-meds" />
