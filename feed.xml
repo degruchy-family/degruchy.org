@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+	  <title>Tailscaled</title>
+	  <id>https://degruchy.org/#20221114-tailscaled</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221114-tailscaled" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-11-14T10:40:39-0500</updated>
+	  <published>2022-11-14T10:40:39-0500</published>
+	  <content />
+	</entry>
+	<entry>
 	  <title>I Sold it On Ebay</title>
 	  <id>https://degruchy.org/#20221113-i-sold-it-on-ebay</id>
 	  <link rel="alternate" href="https://degruchy.org/#20221113-i-sold-it-on-ebay" />
