@@ -25,6 +25,47 @@
 			</h1>
 		</header>
 		<main id="content">
+			<article class="hentry h-entry" id="20221120-package-install-without-use-package">
+				<header>
+					<h2>
+						Package Install Without Use-Package
+						<a href="#20221120-package-install-without-use-package">&#x1F517;</a>
+					</h2>
+					<time datetime="2022-11-20T15:13:15-0500">15:13:15 on 2022-11-20</time>
+				</header>
+				<section>
+					<p>So, one of the things I had to sort out when
+					slimming down on the amount of external packages
+					that I use is to get things installed
+					without <code>use-package</code>. Typically, I
+						used a form that looked a lot like this:</p>
+					<pre>
+						<code>
+(unless (package-installed-p 'package)
+	(package-refresh-contents)
+	(package-install 'package))
+						</code>
+					</pre>
+					<p>For a small amount of packages, this was fine,
+					even if it was inefficient by refreshing the
+					package contents for each instance of that. It was
+						barely a problem with 1 or 2 packages.</p>
+					<p><em>Of course</em>, there is a much more
+					efficient manner, already built into Emacs, and
+					much easier to implement:</p>
+					<pre>
+						<code>
+(setq package-selected-packages '(ef-themes
+								  emms))
+(package-install-selected-packages)
+						</code>
+					</pre>
+					<p>Yeah. So, just make a list of package names you
+					want to install and uh, tell it to do that. No
+					multiple refreshes, just here's what I want, go do
+					that. Magic.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20221117-recession-is-coming">
 				<header>
 					<h2>

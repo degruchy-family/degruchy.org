@@ -3,7 +3,7 @@
 
 	<title>Verily at DeGruchy.org</title>
 	<link href="https://degruchy.org/" />
-	<updated>2022-11-17T14:22:44-0500</updated>
+	<updated>2022-11-20T15:21:59-0500</updated>
 	<author>
 		<name>Nathan DeGruchy</name>
 		<email>nathan@degruchy.org</email>
@@ -14,6 +14,18 @@
 	<icon>https://degruchy.org/assets/images/2020-minimal-avatar-50.webp</icon>
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
+	<entry>
+	  <title>Package Install Without Use-Package</title>
+	  <id>https://degruchy.org/#20221120-package-install-without-use-package</id>
+	  <link rel="alternate" href="https://degruchy.org/#20221120-package-install-without-use-package" />
+	  <author>
+		<name>Nathan DeGruchy</name>
+		<email>nathan@degruchy.org</email>
+	  </author>
+	  <updated>2022-11-20T15:21:42-0500</updated>
+	  <published>2022-11-20T15:21:42-0500</published>
+	  <content />
+	</entry>
 	<entry>
 	  <title>Recession is Coming</title>
 	  <id>https://degruchy.org/#20221117-recession-is-coming</id>
