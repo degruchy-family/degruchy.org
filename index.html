@@ -39,13 +39,18 @@
 					that I use is to get things installed
 					without <code>use-package</code>. Typically, I
 						used a form that looked a lot like this:</p>
-					<pre>
-						<code>
-(unless (package-installed-p 'package)
+<figure>
+	<pre>
+		<code>
+(package-installed-p 'package)
 	(package-refresh-contents)
 	(package-install 'package))
-						</code>
-					</pre>
+		</code>
+	</pre>
+	<figcaption>Rinse and repeat as needed. Someone should make this a
+	macro&hellip;</figcaption>
+</figure>
+
 					<p>For a small amount of packages, this was fine,
 					even if it was inefficient by refreshing the
 					package contents for each instance of that. It was
@@ -53,12 +58,15 @@
 					<p><em>Of course</em>, there is a much more
 					efficient manner, already built into Emacs, and
 					much easier to implement:</p>
-					<pre>
-						<code>
+<figure>
+	<pre>
+		<code>
 (setq package-selected-packages '(ef-themes emms))
 (package-install-selected-packages)
-						</code>
-					</pre>
+		</code>
+	</pre>
+	<figcaption>Yeah, embarassingly easy.</figcaption>
+</figure>
 					<p>Yeah. So, just make a list of package names you
 					want to install and uh, tell it to do that. No
 					multiple refreshes, just here's what I want, go do
