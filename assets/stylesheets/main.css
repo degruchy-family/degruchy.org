@@ -1,10 +1,10 @@
-/**************************************/
-/* Nathan DeGruchy's Blog Style Sheet */
-/**************************************/
+/*!
+ * Nathan DeGruchy's Blog Style Sheet
+ */
 
-/****************************/
-/* Top Level Configurations */
-/****************************/
+/*
+ * Top Level Configurations
+ */
 :root
 {
 	background-color: #FFF;
@@ -45,7 +45,7 @@ sup
 }
 
 /**
- * Screen reader tools *
+ * Screen reader tools
  */
 .hide-for-screen-readers
 {
@@ -145,7 +145,6 @@ article header a.featured
 	text-align: center;
 }
 
-/* Shell steps */
 /**
  * Fix some image and video scaling issues
  */
@@ -190,10 +189,10 @@ iframe
 	width: 100%;
 }
 
-/******************************************************************/
-/* This fixes a 'button' to the bottom of the viewport, scrolling */
-/* smoothly with the user. All without hacky JS.				  */
-/******************************************************************/
+/*
+ * This fixes a 'button' to the bottom of the viewport, scrolling
+ * smoothly with the user. All without hacky JS.
+ */
 footer #comments
 {
 	background: #FFF;
