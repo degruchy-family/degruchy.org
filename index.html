@@ -26,6 +26,46 @@
 			</h1>
 		</header>
 		<main id="content">
+			<article class="hentry h-entry" id="20221129-gnu-readline-neatness">
+				<header>
+					<h2>
+						GNU Readline Neatness
+						<a href="#20221129-gnu-readline-neatness">&#x1F517;</a>
+					</h2>
+					<time datetime="2022-11-29T16:46:25-0500">16:46:25 on 2022-11-29</time>
+				</header>
+				<section>
+					<p>While GNU Readline may not be <em>Emacs
+					Proper</em>, it does share a lot of history. The
+					default keybindings mirror many of Emacs
+					keybindings, and even the settings are "kebab
+					case", just like in Emacs, albeit not in
+					Elisp.</p>
+					<p>I recently discovered that there are some
+					really nice settings you can set to have your
+					Readline be a bit more comfy. Not sure why these
+					aren't default, but whatever. They'll work in
+					Bash, but ZSH and other shells might not implement
+					them. So, <abbr title="Your Milage May
+					Vary">YMMV</abbr>.</p>
+					<pre>
+						<code>
+## File: ~/.inputrc
+# Make autocompletion case insensitive and display suggestions after single tab.
+set completion-ignore-case On
+set show-all-if-ambiguous On
+# Show color in completions
+set colored-completion-prefix On
+set colored-stats On
+						</code>
+					</pre>
+					<p>I love finding out about stuff like this,
+					because it makes me happy to discover a part of
+					the tooling I wasn't using before, but actually
+					wanted. It's like getting a Christmas gift that
+					you want, but hadn't asked for yet.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20221122-tumblr-to-add-activity-pub-support">
 				<header>
 					<h2>
