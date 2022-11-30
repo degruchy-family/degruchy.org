@@ -42,7 +42,7 @@ pre code
 object,
 embed
 {
-	max-width: 100%;
+	width: min(45rem, 90%);
 }
 
 sup
