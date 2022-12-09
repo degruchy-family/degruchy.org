@@ -7,8 +7,6 @@
  */
 :root
 {
-	background-color: #FFF;
-	color: #000;
 	font-family: system-ui;
 	margin: 0;
 	padding: 0;
@@ -223,4 +221,31 @@ footer #comments a
 {
 	display: block;
 	padding: 0.5rem 0;
+}
+
+@media screen and (prefers-color-scheme: light)
+{
+	body
+	{
+		background-color: white;
+		color: black;
+	}
+}
+
+@media screen and (prefers-color-scheme: dark)
+{
+	body
+	{
+		background-color: #1B2430;
+		color: #D6D5A8;
+	}
+
+	a
+	{
+		color: #51557E;
+	}
+	a:visited
+	{
+		color: #816797;
+	}
 }
