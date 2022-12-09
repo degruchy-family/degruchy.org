@@ -7,6 +7,11 @@
  */
 :root
 {
+	--var-light-background: white;
+	--var-light-foreground: black;
+	--var-dark-background:  #1B2430;
+	--var-dark-foreground:  #D6D5A8;
+
 	font-family: system-ui;
 	margin: 0;
 	padding: 0;
@@ -21,7 +26,6 @@ pre
 
 code
 {
-	background-color: #CCC;
 	font-size: 1rem;
 }
 
@@ -207,7 +211,6 @@ iframe
  */
 footer #comments
 {
-	background: #FFF;
 	border-top: 1px solid #CCC;
 	bottom: 0;
 	box-shadow: 1px -5px 15px 2px rgb(181, 181, 181);
@@ -227,8 +230,8 @@ footer #comments a
 {
 	body
 	{
-		background-color: white;
-		color: black;
+		background-color: var(--var-light-background);
+		color: var(--var-light-foreground);
 	}
 }
 
@@ -236,8 +239,8 @@ footer #comments a
 {
 	body
 	{
-		background-color: #1B2430;
-		color: #D6D5A8;
+		background-color: var(--var-dark-background);
+		color: var(--var-dark-foreground);
 	}
 
 	a
