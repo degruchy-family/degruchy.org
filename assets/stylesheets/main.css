@@ -228,7 +228,8 @@ footer #comments a
 
 @media screen and (prefers-color-scheme: light)
 {
-	body
+	body,
+	footer #comments
 	{
 		background-color: var(--var-light-background);
 		color: var(--var-light-foreground);
@@ -237,7 +238,8 @@ footer #comments a
 
 @media screen and (prefers-color-scheme: dark)
 {
-	body
+	body,
+	footer #comments
 	{
 		background-color: var(--var-dark-background);
 		color: var(--var-dark-foreground);
