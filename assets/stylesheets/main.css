@@ -205,27 +205,6 @@ iframe
 	width: 100%;
 }
 
-/*
- * This fixes a 'button' to the bottom of the viewport, scrolling
- * smoothly with the user. All without hacky JS.
- */
-footer #comments
-{
-	border-top: 1px solid #CCC;
-	bottom: 0;
-	box-shadow: 1px -5px 15px 2px rgb(181, 181, 181);
-	margin: 0;
-	position: fixed;
-	text-align: center;
-	width: min(45rem, 90%);
-}
-
-footer #comments a
-{
-	display: block;
-	padding: 0.5rem 0;
-}
-
 @media screen and (prefers-color-scheme: light)
 {
 	body,
@@ -238,8 +217,7 @@ footer #comments a
 
 @media screen and (prefers-color-scheme: dark)
 {
-	body,
-	footer #comments
+	body
 	{
 		background-color: var(--var-dark-background);
 		color: var(--var-dark-foreground);
