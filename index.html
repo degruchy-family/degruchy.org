@@ -26,6 +26,63 @@
 			</h1>
 		</header>
 		<main id="content">
+			<article class="hentry h-entry" id="20221214-more-emacs-archeology-input-methods">
+				<header>
+					<h2>
+						More Emacs Archeology: Input Methods
+						<a href="#20221214-more-emacs-archeology-input-methods">&#x1F517;</a>
+					</h2>
+					<time datetime="2022-12-14T18:52:52-0500">18:52:52 on 2022-12-14</time>
+				</header>
+				<section>
+					<p>Input methods, or, the way you put in non-ASCII
+					characters is likely not <em>archeology</em> for
+					much of the world, but it's something I don't know
+					much about. Plus, I learned a couple of neat
+					tricks. So "archeology" it is.</p>
+					<p>Emacs has a rather complete set of input
+					methods. Given that it was born and refined in the
+					terminal days, where common non-ASCII input
+					systems were probably not the norm, it handles
+					lots of different languages and keyboard layouts.
+					However, there appear to be some useful layouts
+					that are more than mere "input methods":</p>
+					<p>One such method is the <code>sgml</code> input
+					method (accessed by <kbd>C-\</kbd>). This converts
+					any proper HTML encoding sequence after
+					an <kbd>&amp;</kbd> character into the display
+					equivalent. So characters
+					like <code>&hellip;</code> are turned into
+					ellipses, or <code>&trade;</code> is turned into
+					the Trademark logo. Pretty neat! You can do a
+					similar thing for LaTeX documents with
+					the <code>TeX</code> input method.</p>
+					<p>So, you might have been thinking: "Doesn't this
+					kind of sit inside of the prettify-symbol
+					wheelhouse of replacing sequences of characters
+					with a pretty glyph?" Or perhaps you were
+					thinking: "Why not just setup some easy
+					abbreviations with abbrev?" For some of the more
+					astute among my Emacs readers might also say:
+					"Hey! You can just press <kbd>C-x 8</kbd> and
+					input pretty much <em>any</em> unicode symbol!
+					What's the point of this?".</p>
+					<p>You, of course, would be correct. There are
+					lots of ways of handling this. Abbrevs and
+					prettify symbol both do what you ask, one altering
+					the text and one not. And yes, you are right when
+					you say you could use the unicode insertion macro.
+					All true. However, as in input method, this
+					feature is easily <em>toggled</em> and in doing so
+					allows you to continue writing, without having to
+					break your stride too much. That said, I don't
+					think I'll have much of a place to use it in the
+					future. I'm not writing documents anymore, and my
+					coding days are behind me. Maybe, one day, I'll
+					need it for something. On that day, I'll be glad
+					I'm using Emacs.</p>
+				</section>
+			</article>
 			<article class="hentry h-entry" id="20221130-finished">
 				<header>
 					<h2>
@@ -37,7 +94,7 @@
 				<section>
 					<p>It's finally over. Everything has been
 					submitted. My Capstone class is done. More than 8
-					years in the making. Lots of awkward misteps and
+					years in the making. Lots of awkward missteps and
 					more than a few frustrating things with FSCJ's
 					administration and professors -- but it's done
 					now. I can rest.</p>
