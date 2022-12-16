@@ -1,9 +1,6 @@
 *~
 \#*\#
 .idea/
-.idea_modules/
 *.min.*
-!lazyload.min.js
 !timeago.min.js
-!lite-youtube.min.js
 *.code-workspace
