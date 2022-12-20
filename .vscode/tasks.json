@@ -27,7 +27,11 @@
 				"Upload files",
 				"Invalidate CloudFront"
 			],
-			"problemMatcher": []
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		}
 	]
 }
