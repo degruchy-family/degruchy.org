@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+		<title>Merry Christmas</title>
+		<id>https://degruchy.org/#20221228-merry-christmas</id>
+		<link rel="alternative" href="https://degruchy.org/#20221228-merry-christmas"/>
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degruchy.org</email>
+		</author>
+		<updated>2022-12-28T00:00:00-0500</updated>
+		<published>2022-12-28T00:00:00-0500</published>
+		<content/>
+	</entry>
+	<entry>
 	  <title>More Emacs Archaeology: Input Methods</title>
 	  <id>https://degruchy.org/#20221214-more-emacs-archaeology-input-methods</id>
 	  <link rel="alternate" href="https://degruchy.org/#20221214-more-emacs-archaeology-input-methods" />
