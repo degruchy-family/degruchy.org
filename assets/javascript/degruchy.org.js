@@ -4,15 +4,14 @@
  * things like timeago
  */
 
+import timeago from "./timeago.min";
+
 /**
  * Main function
  * @description The function that gets triggered once the page loads
  * @returns bool - True on success, false on failure
  */
 function main() {
-	/**
-	 * @type NodeListOf<HTMLElements>
-	 */
 	const eTimes = document.querySelectorAll("time");
 
 	// Start time ago
