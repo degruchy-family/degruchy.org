@@ -4,8 +4,6 @@
  * things like timeago
  */
 
-import timeago from "./timeago.min";
-
 /**
  * Main function
  * @description The function that gets triggered once the page loads
