@@ -15,6 +15,18 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+		<title>Choose Two</title>
+		<id>https://degruchy.org/#20230109-choose-two</id>
+		<link rel="alternate" href="https://degruchy.org/#20230109-choose-two" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2023-01-09T13:04:42-0500</updated>
+		<published>2023-01-09T13:04:42-0500</published>
+		<content />
+	</entry>
+	<entry>
 		<title>Merry Christmas</title>
 		<id>https://degruchy.org/#20221228-merry-christmas</id>
 		<link rel="alternative" href="https://degruchy.org/#20221228-merry-christmas"/>
