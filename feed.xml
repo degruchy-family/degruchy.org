@@ -15,6 +15,30 @@
 	<rights>All rights reserved, (c) 2022 Nathan DeGruchy</rights>
 	<id>https://degruchy.org/</id>
 	<entry>
+		<title>RANDALL!!!</title>
+		<id>https://degruchy.org/#20230110-randall</id>
+		<link rel="alternate" href="https://degruchy.org/#20230110-randall" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2023-01-10T15:51:05-0500</updated>
+		<published>2023-01-10T15:51:05-0500</published>
+		<content />
+	</entry>
+	<entry>
+		<title>X Windows Basics</title>
+		<id>https://degruchy.org/#20230110-x-windows-basics</id>
+		<link rel="alternate" href="https://degruchy.org/#20230110-x-windows-basics" />
+		<author>
+			<name>Nathan DeGruchy</name>
+			<email>nathan@degurchy.org</email>
+		</author>
+		<updated>2023-01-10T15:50:57-0500</updated>
+		<published>2023-01-10T15:50:57-0500</published>
+		<content />
+	</entry>
+	<entry>
 		<title>Choose Two</title>
 		<id>https://degruchy.org/#20230109-choose-two</id>
 		<link rel="alternate" href="https://degruchy.org/#20230109-choose-two" />
